@@ -1,0 +1,40 @@
+// *************************************
+//
+//   Sort
+//   -> Sort-menu
+//
+// *************************************
+
+.sort-menu
+  @extend %grid-box
+  @extend %grid-box-1of4
+  .card
+    @extend %card--b
+    @extend %card--f
+    @extend %list
+    text-align: left
+  h2
+    @extend %h4
+    color: $blue
+    display: inline-block
+    margin-bottom: $b-space-m
+    text-transform: uppercase
+
+.sort-menu-item
+  border-bottom: $list-border
+  color: lighten($dark, 25%)
+  cursor: pointer
+  display: block
+  font-style: italic
+  padding: $list-space
+  &:last-child
+    margin-bottom: 0
+    border-bottom: none
+  &:hover,
+  &:focus,
+  &:active,
+    background: lighten($dark, 10%)
+    color: $c-highlight
+  &.active
+    background: lighten($dark, 10%)
+    color: $c-highlight

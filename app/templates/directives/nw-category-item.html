@@ -1,0 +1,17 @@
+<a class="sort-menu-item"
+   ng-class="{'active': isActive()}"
+   ng-click="makeActive()">
+
+  <i class="icon left {{category.icon}}"></i>
+  {{category.name}}
+  ({{categoryCount()}})
+
+  <i class="icon close"
+     ng-if='isActive()'
+     ng-click="makeInactive($event)"></i>
+  </a>
+ <!-- Simple Version -->
+
+<!-- <a class="sort-menu-item" ng-class="{'active': categoryActive()}" ng-click="makeActive()">
+  <i class="icon left {{category.icon}}"></i> {{category.name}}
+</a> -->

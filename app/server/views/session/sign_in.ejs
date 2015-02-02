@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Note Wrangler</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/application.css" />
+  </head>
+
+  <body>
+    <div class="panel hero-cover">
+      <div class="panel-content">
+        <div class="registration">
+          <h2>Log In</h2>
+          <form name='registration' method='post' action='/session'>
+            <input type="hidden", name="_csrf", value='<%-csrfToken%>'>
+            <input class="form-input" type='text' name='username' placeholder='User Name'>
+            <input class="form-input" type='password' name='password' placeholder='Password'>
+            <input class="btn" type='submit' value='Submit'>
+          </form>
+          <a href='/sign_up'>Register</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

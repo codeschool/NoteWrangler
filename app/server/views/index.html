@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="NoteWrangler" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="NoteWrangler" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="NoteWrangler" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="NoteWrangler">
+<!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Note Wrangler</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/application.css" />
+  </head>
+
+  <body>
+    <div class="nav-wrapper has-dropdown">
+      <div class="nav-content">
+        <div class="wrapper">
+          <div class="nav-content-layout">
+            <div class="nav-list">
+              <nw-page-nav-item>Users</nw-page-nav-item>
+              <nw-page-nav-item>Notes</nw-page-nav-item>
+            </div>
+          </div>
+
+          <div class="nav-content-layout">
+            <nw-session></nw-session>
+            <input class="form-input-search" type="text" placeholder="Search..." ng-model="search">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <div class="hero"></div>
+      </div>
+    </div>
+    <div class="main-wrapper">
+        <div ng-view></div>
+    </div>
+
+    <!-- Vendors -->
+    <script src="/js/vendor/markdown.js"></script>
+
+    <!-- Load Js libs -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/bootstrap.js"></script>
+    <script src="/js/vendor/angular.js"></script>
+    <script src="/js/vendor/angular-route.js"></script>
+    <script src="/js/vendor/angular-resource.js"></script>
+    <script src="/js/vendor/gravatar.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/routes.js"></script>
+
+    <!-- Directives -->
+    <script src="/js/directives/nw-card.js"></script>
+    <script src="/js/directives/nw-session.js"></script>
+    <script src="/js/directives/nw-page-nav-item.js"></script>
+    <script src="/js/directives/nw-category-select.js"></script>
+    <script src="/js/directives/nw-category-item.js"></script>
+
+    <script src="/js/directives/title.js"></script>
+
+    <!-- Services -->
+    <script src="/js/services/session.js"></script>
+
+    <!-- These are not needed, and replaced by Note and user resource. For reference only -->
+    <!-- <script src="/js/services/user.js"></script> -->
+    <!-- <script src="/js/services/note.js"></script> -->
+    <script src="/js/services/category.js"></script>
+    <script src="/js/services/markdown.js"></script>
+
+    <!-- Resources -->
+    <script src="/js/resources/note.js"></script>
+    <script src="/js/resources/user.js"></script>
+
+    <!-- Controllers -->
+    <script src="/js/controllers/notes-create-controller.js"></script>
+    <script src="/js/controllers/notes-edit-controller.js"></script>
+    <script src="/js/controllers/notes-index-controller.js"></script>
+    <script src="/js/controllers/notes-show-controller.js"></script>
+    <script src="/js/controllers/profile-edit-controller.js"></script>
+    <script src="/js/controllers/users-index-controller.js"></script>
+    <script src="/js/controllers/users-show-controller.js"></script>
+
+    <!-- Filters -->
+    <script src="/js/filters/notes-filter.js"></script>
+
+
+  </body>
+</html>

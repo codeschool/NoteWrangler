@@ -1,0 +1,175 @@
+// *************************************
+//
+//   Helpers
+//   -> Functions, Mixins, Extends, Animations
+//
+// *************************************
+
+// -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- Em ----- //
+// -> Converts pixel value to an em
+//
+// $target - the target pixel size
+// $context - the context font-size
+
+@function em($target, $context: $b-fontSize)
+  @if ($target == 0)
+    @return 0
+  @else
+    @return ($target / $context) * 1em
+
+// ----- Opposite Position ----- //
+// -> Returns the opposite side
+//
+// $side - the side to return the opposite of
+//
+
+@function opposite-position($side)
+  @if $side == 'top'
+    @return 'bottom'
+  @if $side == 'bottom'
+    @return 'top'
+  @if $side == 'left'
+    @return 'right'
+  @if $side == 'right'
+    @return 'left'
+
+// -------------------------------------
+//   Mixins
+// -------------------------------------
+
+// ----- Font Face ----- //
+// -> https://github.com/thoughtbot/bourbon/edit/master/app/assets/stylesheets/css3/_font-face.scss#
+//
+// $family - the font-family
+// $path - the font path
+// $weight - the font-weight
+// $style - the font-style
+// $asset-pipeline - use the Rails asset pipeline (boolean)
+
+=font-face($family, $path, $weight: normal, $style: normal, $asset-pipeline: true)
+  @font-face
+    font-family: $family
+    font-style: $style
+    font-weight: $weight
+    @if $asset-pipeline == true
+      src: font-url('#{$path}.eot')
+      src: font-url('#{$path}.eot?#iefix') format('embedded-opentype'), font-url('#{$path}.woff') format('woff'), font-url('#{$path}.ttf') format('truetype'), font-url('#{$path}.svg##{$family}') format('svg')
+    @else
+      src: url('#{$path}.eot')
+      src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg##{$family}') format('svg')
+
+// ----- Respond-to ----- //
+// -> Generates a media query
+//
+// $val - the breakpoint size
+// $query - the type of query ('min-width', 'max-width')
+// $media - the media type ('screen', 'print', etc.)
+// @content - the generated content within the mixin
+
+=respond-to($val, $query: min-width, $media: screen)
+  @media #{$media} and ($query: $val)
+    @content
+
+// ----- Caret ----- //
+// -> Adds an arrow to an element
+//
+// $side - the side ('left', 'right', 'top', 'bottom')
+// $size - the size of the caret
+// $color - the color of the caret
+//
+
+=caret($side, $size, $color)
+  $opposite: opposite-position($side)
+  border: $size solid transparent
+  border-#{$opposite}: $size solid $color
+  border-#{$side}: 0
+  bottom: auto
+  content: ''
+  display: block
+  height: 0
+  left: 50%
+  margin: (-$size) 0 0 (-$size)
+  margin-#{$side}: 0
+  position: absolute
+  right: auto
+  top: 50%
+  width: 0
+  #{$side}: -$size
+  #{$opposite}: auto
+
+// ----- Transform ----- //
+// -> Auto-prefixed transform properties
+//
+// $args - a variable number of transform values
+//
+
+=transform($args...)
+  -webkit-transform: $args
+  -moz-transform: $args
+  -ms-transform: $args
+  transform: $args
+
+// ----- Transition ----- //
+// -> Auto-prefixed transition properties
+//
+// $args - a variable number of transition values
+//
+
+=transition($args...)
+  -webkit-transition: $args
+  transition: $args
+
+// ----- Transition Transform ----- //
+// -> Auto-prefixed transition properties (for transforms)
+//
+// $args - a variable number of transform values
+//
+
+=transition-transform($args...)
+  -webkit-transition: -webkit-transform $args
+  transition: transform $args
+
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+// ----- Clearfix ----- //
+
+%group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Faux Hide ----- //
+
+%fauxHide
+  height: 0
+  opacity: 0
+  overflow: hidden
+  visibility: hidden
+
+// ----- Faux Show ----- //
+
+%fauxShow
+  height: auto
+  opacity: 1
+  overflow: visible
+  visibility: visible
+
+// ----- Box Sizing ----- //
+
+%boxSizing
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+// -------------------------------------
+//   Animations
+// -------------------------------------
+
+// ...
+

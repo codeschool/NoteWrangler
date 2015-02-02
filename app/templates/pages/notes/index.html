@@ -1,0 +1,25 @@
+<div class="note-wrapper">
+  <div class="note-content">
+    <div class="notes-header">
+      <h1 title="Notes">Notes</h1>
+      <a class="btn-b" href='#/notes/new' ng-if='loggedIn'>
+        <i class="icon add"></i>
+        New Note
+      </a>
+    </div>
+    <div class="note-wrapper">
+      <p ng-show="note">Nothing here to show you, friend.</p>
+      <a class="card-notes" ng-repeat="note in notes | filter:current" ng-href="#/notes/{{note.id}}">
+
+        <nw-card header="note.title"
+                 icon="{{note.icon}}"
+                 body="note.description"
+                 id="note.id"
+                 type="{{note.noteType.name}}"></nw-card>
+      </a>
+    </div>
+  </div>
+
+  <nw-category-select active-category='current' notes='notes'></nw-category-select>
+
+</div>

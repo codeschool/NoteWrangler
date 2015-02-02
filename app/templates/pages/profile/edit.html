@@ -1,0 +1,45 @@
+<div class="new-note">
+  <div class="new-note-container">
+    <h2>{{user.name}}</h2>
+    <i class="icon {{user.type}}"></i>
+
+    <ul class='errors' ng-if="errors">
+      <li ng-repeat="error in errors">{{error}}</li>
+    </ul>
+
+    <form class="form">
+      <fieldset class="form-field">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" name="name" ng-model="user.name" />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="username">User Name</label>
+        <input class="form-input" name="username" ng-model="user.username" />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="password">Password</label>
+        <input class="form-input" name="password" ng-model="user.password" placeholder='password' />
+        <input class="form-input" name="passwordConfirm" ng-model="user.passwordConfirm" placeholder='password confirm' />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="twitter_handle">Twitter name</label>
+        <input class="form-input" name="twitter_handle" ng-model="user.twitter_handle" placeholder='Twitters' />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="site">Site</label>
+        <input class="form-input" name="site" ng-model="user.site" placeholder="I don't have a site :(" />
+      </fieldset>
+
+      <fieldset class="form-field">
+        <label class="form-label" for="bio">Bio</label>
+        <textarea class="form-input" name="bio"  ng-model="user.bio" placeholder="Tell us a little about yourself."></textarea>
+      </fieldset>
+
+      <button class="btn" ng-click="updateUser(user)" ng-disabled="updating">{{updating ? 'Saving...' : 'Save'}}</button>
+    </form>
+  </div>
+</div>

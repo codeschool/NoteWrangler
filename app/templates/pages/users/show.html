@@ -1,0 +1,14 @@
+<div class="card">
+  <img ng-src='{{gravatarUrl(user)}}'/>
+  <h1 class="user-name">{{user.name}}</h1>
+  <h3>Bio</h3>
+  <p>{{user.bio}}</p>
+
+  <h3>Notes</h3>
+  <div>
+    <a ng-repeat="note in user.notes | filter:filter | filter:search" ng-href='#/notes/{{note.id}}'>
+      <nw-card card-title="note.header" icon="note.icon" body="note.description" type="note.type" id="note.id"></nw-card>
+    </a>
+    <p ng-if='user.notes.length === 0'>This user Doesn't have any notes :(</p>
+  </div>
+</div>

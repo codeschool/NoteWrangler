@@ -1,0 +1,48 @@
+// *************************************
+//
+//   Button
+//   -> Button Styles
+//
+// *************************************
+
+// ----- btn ----- //
+
+.btn, %btn
+  display: inline-block
+  background: $c-highlight
+  padding: $btn-space/2 $btn-space
+  border: none
+  color: $c-background-invert
+  border-radius: $b-borderRadius
+  font-size: $b-fontSize-m
+  &:hover,
+  &:focus
+    color: $c-background-invert
+    background: lighten($c-highlight, 5%)
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Sizes ----- //
+
+.btn--s
+  line-height: 2.5
+  padding-left: $b-space
+  padding-right: $b-space
+
+
+// ----- Theme ----- //
+
+.btn-b
+  @extend %btn
+  float: right
+
+.btn--c
+  background: none
+  // border: $b-borderWidth--lrg $b-borderStyle $c-highlight
+  color: $c-highlight
+  &:hover,
+  &:focus
+    background: $c-highlight
+    color: $c-text-invert

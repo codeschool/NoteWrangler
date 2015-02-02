@@ -1,0 +1,87 @@
+// *************************************
+//
+//   Card
+//   -> Individual style containers
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .card
+//   / ...
+//
+// *************************************
+
+$card-borderRadius: 3px !default
+$card-boxShadow: 0 2px 0 rgba(#000, 0.15) !default
+
+.card, %card
+  background: $c-background-invert
+  border-radius: $card-borderRadius
+  box-shadow: $card-boxShadow
+  padding: $b-space
+  position: relative
+
+.card--f, %card--f
+  padding: 0
+
+.card-users,
+.card-notes
+  text-align: center
+  .card
+    margin-bottom: $b-space
+
+.card--a, %card--a
+  min-height: 150px
+
+.card--b, %card--b
+  background: lighten($c-background, 5%)
+
+.card--center, %card--center
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 80%
+  +respond-to($b-maxWidth-s)
+    width: 50%
+  +respond-to($b-maxWidth)
+    width: 30%
+
+.card-hidden
+  @extend %card
+  @extend %card--f
+  @extend %stretch
+  @extend %fauxHide
+  padding: $b-space
+
+.card-notes
+  @extend %grid-box
+  @extend %grid-box-1of1
+  @extend %grid-box-m--1of2
+  min-height: 150px
+  .card
+    height: 150px
+
+.card-notes:nth-of-type(2n+1)
+  clear: left
+
+.card-users
+  @extend %grid-box
+  @extend %grid-box-1of1
+  @extend %grid-box-s--1of2
+  @extend %grid-box-m--1of3
+  @extend %grid-box-l--1of4
+
+.card-type
+  color: $c-text
+  font-size: $b-fontSize-m
+  margin-bottom: 0
+
+.card-link
+  color: $c-highlight
+
+.card:hover
+  .card-hidden
+    @extend %fauxShow
+    overflow: hidden

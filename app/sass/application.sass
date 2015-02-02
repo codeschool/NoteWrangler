@@ -1,0 +1,120 @@
+// *************************************
+//
+//   [Project Name] - MVCSS v4.0.2
+//   -> Manifest
+//
+// *************************************
+
+// -------------------------------------
+//   Foundation
+// -------------------------------------
+
+@import "foundation/reset"
+@import "foundation/helpers"
+@import "foundation/config"
+@import "foundation/base"
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+@import "components/bucket"
+@import "components/card"
+@import "components/cell"
+@import "components/form"
+@import "components/grid"
+@import "components/list"
+@import "components/panel"
+@import "components/row"
+@import "components/well"
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+@import "structures/button"
+@import "structures/dropdown"
+@import "structures/hero"
+@import "structures/icons"
+@import "structures/registration"
+@import "structures/sort"
+
+// -------------------------------------
+//   Vendor
+// -------------------------------------
+
+@import "vendor/tooltip"
+
+// -------------------------------------
+//   Inbox
+// -------------------------------------
+
+.main-wrapper
+  @extend %row
+  @extend %row--b
+  @extend %cell
+  @extend %well
+
+.nav-wrapper
+  @extend %row
+
+.nav-content
+  @extend %cell
+  @extend %well--m
+
+.nav-content-layout
+  @extend %grid-box
+  @extend %grid-box-1of2
+
+
+.nav-list
+  @extend %list
+  .list-item
+    border-bottom: none
+    color: $c-highlight
+    display: inline
+    margin-right: $list-space
+    &:last-child
+      margin-right: 0
+    &:hover,
+    &:focus,
+    &:active,
+      background: none
+      border-bottom: none
+      color: lighten($c-highlight,10%)
+    &.active
+      background: none
+      border-bottom: none
+      color: lighten($c-highlight,10%)
+
+.new-note
+  @extend %row
+
+.new-note-container
+  @extend %card
+  @extend %cell
+  @extend %cell--s
+  text-align: left
+
+.session
+  float: right
+  display: inline-block
+
+.session-create
+  float: right
+
+.note-wrapper, .users-wrapper , .wrapper
+  @extend %grid
+
+.note-content
+  @extend %grid-box
+  @extend %grid-box-3of4
+
+.notes-header
+  margin-bottom: $b-space-m
+  h1
+    @extend %h4
+    display: inline-block
+
+.user-name
+  color: $c-highlight

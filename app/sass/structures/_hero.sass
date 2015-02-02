@@ -1,0 +1,24 @@
+// *************************************
+//
+//   Hero
+//   -> Main Hero image in header
+//
+// *************************************
+
+.hero
+  min-height: $hero-minHeight
+  background-color: $hero-background
+  background-image: url('../images/note-wrangler-hero.jpg')
+  background-position: center
+  background-repeat: no-repeat
+
+.hero-wrapper
+  @extend %row
+  background-color: $hero-background
+
+.hero-content
+  @extend %cell
+
+.hero-cover
+  background-image: url('../images/hero-cover.jpg')
+  background-size: cover

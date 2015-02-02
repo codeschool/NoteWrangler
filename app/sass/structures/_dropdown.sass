@@ -1,0 +1,114 @@
+// *************************************
+//
+//   Dropdown
+//   -> Dropdown menus
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .dropdown(.is-active)
+//   %a.dropdown-btn.btn{href: '#'} Button
+//   %ul.dropdown-menu.list
+//     %li.dropdown-item.list-item(.is-active)
+//       %a.dropdown-item-link.list-item-link{href: '#'} Item
+//     %li.dropdown-item.list-item(.is-active)
+//       %a.dropdown-item-link.list-item-link{href: '#'} Item
+//
+// *************************************
+
+// ----- Dropdown ----- //
+
+$dropdown-width: 150px
+$b-transitionSpeed: 0.3s
+
+.dropdown
+  max-width: $dropdown-width
+  position: relative
+  width: auto
+  z-index: 30
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// ----- Active ----- //
+
+.dropdown:hover
+
+  .dropdown-btn
+    color: $c-text-invert
+    &::after
+      color: $c-text-invert
+
+  .dropdown-menu
+    @extend %fauxShow
+    +transition(opacity $b-transitionSpeed ease-in-out, top $b-transitionSpeed ease-in-out)
+    top: 130%
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-dropdown
+  overflow: visible
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Button ----- //
+
+.dropdown-btn
+  $placement: 'after'
+  // @extend %icn
+  // @extend %icn--#{$placement}
+  // @extend %icn--arrowDown--alt--#{$placement}
+  display: block
+  &:hover,
+  &:focus
+    &::#{$placement}
+      color: $c-text-invert
+  &::#{$placement}
+    color: $c-highlight
+    font-size: 7px // IE being a jerk.
+    left: auto
+    line-height: 30px // IE being a jerk.
+    padding-left: (1.25 * $b-space)
+    padding-right: (1.25 * $b-space)
+
+// ----- Item ----- //
+
+.dropdown-item
+  border-bottom: $b-border
+  margin: 0
+  &:last-child
+    border: 0
+  &:hover
+    background: darken(#fff, 15%)
+
+// Link
+
+.dropdown-item-link
+  border: 0
+  display: block
+  padding: $b-space-s $b-space
+
+// ----- Menu ----- //
+
+.dropdown-menu
+  @extend %boxSizing
+  @extend %card
+  @extend %fauxHide
+  border-radius: 0
+  font-size: $b-fontSize-m
+  left: 50%
+  margin-left: -($dropdown-width / 2)
+  padding: 0
+  position: absolute
+  text-align: center
+  top: 3.5 * $b-space
+  width: $dropdown-width
+  z-index: 10
+  &::after
+    +caret('top', 8px, $c-text-invert)

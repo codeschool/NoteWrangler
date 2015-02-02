@@ -1,0 +1,10 @@
+<div class="card">
+  <h1><i class="{{note.icon}} icon left"></i>{{note.header}}</h1>
+  <p>Created by: {{note.user.name || note.user.username}}</p>
+  <a ng-href='#/notes/{{note.id}}/edit' ng-if='currentUser.id === note.UserId'>Edit Note</a>
+  <h3>Description:</h3>
+  <p>{{note.description}}</p>
+
+  <h3>Contents:</h3>
+  <p>{{note.content}}</p>
+</div>

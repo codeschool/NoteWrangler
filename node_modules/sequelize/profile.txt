@@ -1,0 +1,1336 @@
+Code move event for unknown code: 0x340aa4f2fee0
+Code move event for unknown code: 0x340aa4f33f80
+Code move event for unknown code: 0x340aa4f360a0
+Code move event for unknown code: 0x340aa50e4820
+Code move event for unknown code: 0x340aa50e7960
+Code move event for unknown code: 0x340aa50e9080
+Statistical profiling result from v8.log, (2405 ticks, 3 unaccounted, 0 excluded).
+
+ [Unknown]:
+   ticks  total  nonlib   name
+      3    0.1%
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   1428   59.4%    0.0%  /usr/local/bin/node
+    217    9.0%    0.0%  /lib/x86_64-linux-gnu/libc-2.17.so
+     34    1.4%    0.0%  /lib/x86_64-linux-gnu/libpthread-2.17.so
+      3    0.1%    0.0%  /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.18
+      2    0.1%    0.0%  /lib/x86_64-linux-gnu/libm-2.17.so
+      1    0.0%    0.0%  7fff2c5f2000-7fff2c5f4000
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     32    1.3%    4.4%  LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+     28    1.2%    3.9%  Stub: RegExpExecStub
+     27    1.1%    3.8%  KeyedLoadIC: A keyed load IC from the snapshot
+     26    1.1%    3.6%  Stub: CEntryStub
+     24    1.0%    3.3%  LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     24    1.0%    3.3%  LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+     19    0.8%    2.6%  LazyCompile: *test native regexp.js:217
+     18    0.7%    2.5%  Stub: SubStringStub
+     18    0.7%    2.5%  LazyCompile: *BuildResultFromMatchInfo native regexp.js:130
+     16    0.7%    2.2%  LazyCompile: *split native string.js:554
+     14    0.6%    1.9%  Builtin: A builtin from the snapshot {3}
+     14    0.6%    1.9%  Builtin: A builtin from the snapshot
+     12    0.5%    1.7%  LazyCompile: module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     12    0.5%    1.7%  LazyCompile: *parseInt native v8natives.js:110
+     11    0.5%    1.5%  LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     11    0.5%    1.5%  LazyCompile: *Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+     10    0.4%    1.4%  RegExp: (\\d{1\,})-(\\d{2})-(\\d{2}) (\\d{2}):(\\d{2}):(\\d{2})(\\.\\d{1\,})?
+     10    0.4%    1.4%  LazyCompile: *UTC native date.js:294
+      9    0.4%    1.3%  LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      9    0.4%    1.3%  LazyCompile: *exec native regexp.js:168
+      9    0.4%    1.3%  LazyCompile: *Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+      8    0.3%    1.1%  LazyCompile: toString native v8natives.js:223
+      8    0.3%    1.1%  LazyCompile: hasOwnProperty native v8natives.js:249
+      8    0.3%    1.1%  LazyCompile: *Buffer.toString buffer.js:392
+      8    0.3%    1.1%  LazyCompile: *<anonymous>
+      7    0.3%    1.0%  LazyCompile: ToObject native runtime.js:567
+      7    0.3%    1.0%  LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+      7    0.3%    1.0%  LazyCompile: *Buffer.readInt32BE buffer.js:748
+      7    0.3%    1.0%  KeyedCallMegamorphic: args_count: 1
+      7    0.3%    1.0%  CallMegamorphic: args_count: 1 {1}
+      6    0.2%    0.8%  LazyCompile: ToNumber native runtime.js:527
+      6    0.2%    0.8%  LazyCompile: *slice native string.js:510
+      6    0.2%    0.8%  LazyCompile: *MakeTime native date.js:72
+      5    0.2%    0.7%  Stub: StringAddStub
+      5    0.2%    0.7%  Stub: RecordWriteStub {1}
+      5    0.2%    0.7%  RegExp: ^(\\/?|)([\\s\\S]*?)((?:\\.{1\,2}|[^\\/]+?|)(\\.[^.\\/]*|))(?:[\\/]*)$
+      5    0.2%    0.7%  RegExp: ([Z|+\\-])(\\d{2})?:?(\\d{2})?
+      5    0.2%    0.7%  LazyCompile: <anonymous> native v8natives.js:1271
+      5    0.2%    0.7%  LazyCompile: <anonymous> native string.js:36
+      5    0.2%    0.7%  LazyCompile: <anonymous> native date.js:145
+      5    0.2%    0.7%  LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      5    0.2%    0.7%  CallMegamorphic: args_count: 3
+      4    0.2%    0.6%  Stub: ToBooleanStub
+      4    0.2%    0.6%  Stub: RecordWriteStub {5}
+      4    0.2%    0.6%  Stub: CompareICStub
+      4    0.2%    0.6%  LazyCompile: ~indexOf native array.js:1261
+      4    0.2%    0.6%  LazyCompile: DELETE native runtime.js:348
+      4    0.2%    0.6%  LazyCompile: <anonymous> native v8natives.js:1366
+      4    0.2%    0.6%  LazyCompile: *toLowerCase native string.js:739
+      4    0.2%    0.6%  LazyCompile: *isFinite native v8natives.js:103
+      4    0.2%    0.6%  LazyCompile: *forEach native array.js:1087
+      4    0.2%    0.6%  LazyCompile: *MakeDay native date.js:96
+      4    0.2%    0.6%  LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      4    0.2%    0.6%  Builtin: A builtin from the snapshot {4}
+      3    0.1%    0.4%  Stub: RegExpConstructResultStub
+      3    0.1%    0.4%  Stub: KeyedLoadElementStub {1}
+      3    0.1%    0.4%  Stub: KeyedLoadElementStub
+      3    0.1%    0.4%  Stub: FastCloneShallowObjectStub {1}
+      3    0.1%    0.4%  RegExp: sis$
+      3    0.1%    0.4%  RegExp: ies$
+      3    0.1%    0.4%  RegExp: (s|ss|sh|ch|x|o)$
+      3    0.1%    0.4%  RegExp: (octop|vir)i$
+      3    0.1%    0.4%  LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      3    0.1%    0.4%  LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      3    0.1%    0.4%  LazyCompile: ToString native runtime.js:550
+      3    0.1%    0.4%  LazyCompile: *map native array.js:1215
+      3    0.1%    0.4%  LazyCompile: *isArray native array.js:1488
+      3    0.1%    0.4%  LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      3    0.1%    0.4%  LazyCompile: *_s.camelize /home/mickhansen/dev/sequelize/upstream/node_modules/underscore.string/lib/underscore.string.js:339
+      3    0.1%    0.4%  LazyCompile: *Connection.readString /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:639
+      2    0.1%    0.3%  Stub: ToBooleanStub_UndefinedSpecObject
+      2    0.1%    0.3%  Stub: ToBooleanStub_UndefinedBool
+      2    0.1%    0.3%  Stub: ToBooleanStub_BoolSpecObject
+      2    0.1%    0.3%  Stub: RecordWriteStub {7}
+      2    0.1%    0.3%  Stub: RecordWriteStub {6}
+      2    0.1%    0.3%  Stub: RecordWriteStub {4}
+      2    0.1%    0.3%  Stub: RecordWriteStub {3}
+      2    0.1%    0.3%  Stub: RecordWriteStub {2}
+      2    0.1%    0.3%  Stub: RecordWriteStub
+      2    0.1%    0.3%  Stub: InterruptStub
+      2    0.1%    0.3%  Stub: FastNewClosureStub
+      2    0.1%    0.3%  Stub: FastCloneShallowObjectStub
+      2    0.1%    0.3%  Stub: CompareICStub {1}
+      2    0.1%    0.3%  Stub: CallConstructStub {1}
+      2    0.1%    0.3%  RegExp: BC$
+      2    0.1%    0.3%  RegExp: (octop|vir)us$
+      2    0.1%    0.3%  LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      2    0.1%    0.3%  LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      2    0.1%    0.3%  LazyCompile: ~filter native array.js:1036
+      2    0.1%    0.3%  LazyCompile: ~exports.resolve path.js:304
+      2    0.1%    0.3%  LazyCompile: ~b native v8natives.js:1582
+      2    0.1%    0.3%  LazyCompile: ~Module._compile module.js:374
+      2    0.1%    0.3%  LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      2    0.1%    0.3%  LazyCompile: *replace native string.js:221
+      2    0.1%    0.3%  LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+      2    0.1%    0.3%  LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      2    0.1%    0.3%  LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      2    0.1%    0.3%  LazyCompile: *SubString native string.js:205
+      2    0.1%    0.3%  LazyCompile: *MakeDate native date.js:115
+      2    0.1%    0.3%  LazyCompile: *EventEmitter.emit events.js:53
+      2    0.1%    0.3%  LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query.js:34
+      2    0.1%    0.3%  LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+      2    0.1%    0.3%  KeyedStoreIC: A keyed store IC from the snapshot
+      2    0.1%    0.3%  CallMegamorphic: args_count: 2
+      1    0.0%    0.1%  Stub: ToBooleanStub_UndefinedBoolSpecObject
+      1    0.0%    0.1%  Stub: ToBooleanStub {2}
+      1    0.0%    0.1%  Stub: ToBooleanStub {1}
+      1    0.0%    0.1%  Stub: StringDictionaryLookupStub
+      1    0.0%    0.1%  Stub: RecordWriteStub {8}
+      1    0.0%    0.1%  Stub: JSEntryStub
+      1    0.0%    0.1%  Stub: FastNewContextStub {2}
+      1    0.0%    0.1%  Stub: FastNewContextStub {1}
+      1    0.0%    0.1%  Stub: FastNewContextStub
+      1    0.0%    0.1%  Stub: CompareStub_LE
+      1    0.0%    0.1%  Stub: CompareICStub {2}
+      1    0.0%    0.1%  Stub: CallFunctionStub_Args3
+      1    0.0%    0.1%  Stub: CallFunctionStub {2}
+      1    0.0%    0.1%  Stub: CallFunctionStub {1}
+      1    0.0%    0.1%  Stub: CallFunctionStub
+      1    0.0%    0.1%  Stub: CallConstructStub
+      1    0.0%    0.1%  Stub: BinaryOpStub_SHR_Alloc_SMI
+      1    0.0%    0.1%  Stub: BinaryOpStub_BIT_OR_Alloc_SMI
+      1    0.0%    0.1%  Stub: BinaryOpStub_ADD_OverwriteLeft_BothStrings
+      1    0.0%    0.1%  RegExp: s$
+      1    0.0%    0.1%  RegExp: ^(ox)en
+      1    0.0%    0.1%  RegExp: (x|ch|ss|sh)es$
+      1    0.0%    0.1%  RegExp: (shoe)s$
+      1    0.0%    0.1%  RegExp: (quiz)zes$
+      1    0.0%    0.1%  RegExp: (o|e)y$
+      1    0.0%    0.1%  RegExp: (mov)ies$
+      1    0.0%    0.1%  RegExp: (cris|ax|test)es$
+      1    0.0%    0.1%  RegExp: (alias|status)$
+      1    0.0%    0.1%  RegExp: ([ti])um$
+      1    0.0%    0.1%  RegExp: ([ti])a$
+      1    0.0%    0.1%  RegExp: ([m|l])ice$
+      1    0.0%    0.1%  RegExp: ([^aeiouy]|qu)y$
+      1    0.0%    0.1%  RegExp: ([^aeiouy]|qu)ies$
+      1    0.0%    0.1%  RegExp: ((a)naly|(b)a|(d)iagno|(p)arenthe|(p)rogno|(s)ynop|(t)he)ses$
+      1    0.0%    0.1%  RegExp: $
+      1    0.0%    0.1%  LazyCompile: ~test native regexp.js:217
+      1    0.0%    0.1%  LazyCompile: ~split native string.js:554
+      1    0.0%    0.1%  LazyCompile: ~parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      1    0.0%    0.1%  LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      1    0.0%    0.1%  LazyCompile: ~createCallback /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:5795
+      1    0.0%    0.1%  LazyCompile: ~_s.camelize /home/mickhansen/dev/sequelize/upstream/node_modules/underscore.string/lib/underscore.string.js:339
+      1    0.0%    0.1%  LazyCompile: ~StringReplaceGlobalRegExpWithFunction native string.js:374
+      1    0.0%    0.1%  LazyCompile: ~IsPrimitive native runtime.js:618
+      1    0.0%    0.1%  LazyCompile: ~IsGenericDescriptor native v8natives.js:361
+      1    0.0%    0.1%  LazyCompile: ~EventEmitter.emit events.js:53
+      1    0.0%    0.1%  LazyCompile: ~Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      1    0.0%    0.1%  LazyCompile: ~DefaultString native runtime.js:645
+      1    0.0%    0.1%  LazyCompile: ~DataRowMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:518
+      1    0.0%    0.1%  LazyCompile: ~Buffer.copy buffer.js:509
+      1    0.0%    0.1%  LazyCompile: ~Buffer buffer.js:156
+      1    0.0%    0.1%  LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+      1    0.0%    0.1%  LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      1    0.0%    0.1%  LazyCompile: bind native v8natives.js:1578
+      1    0.0%    0.1%  LazyCompile: FILTER_KEY native runtime.js:398
+      1    0.0%    0.1%  LazyCompile: *trim native string.js:778
+      1    0.0%    0.1%  LazyCompile: *substr native string.js:695
+      1    0.0%    0.1%  LazyCompile: *stripBOM module.js:460
+      1    0.0%    0.1%  LazyCompile: *splitPath path.js:298
+      1    0.0%    0.1%  LazyCompile: *keys native v8natives.js:333
+      1    0.0%    0.1%  LazyCompile: *forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      1    0.0%    0.1%  LazyCompile: *TimeClip native date.js:128
+      1    0.0%    0.1%  LazyCompile: *NativeModule.exists node.js:870
+      1    0.0%    0.1%  LazyCompile: *Language.pluralize /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:103
+      1    0.0%    0.1%  LazyCompile: *Language.isUncountable /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:22
+      1    0.0%    0.1%  LazyCompile: *IsPrimitive native runtime.js:618
+      1    0.0%    0.1%  LazyCompile: *Connection.parseD /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:527
+      1    0.0%    0.1%  LazyCompile: *BasicJSONSerialize native json.js:274
+      1    0.0%    0.1%  KeyedLoadIC: singular
+      1    0.0%    0.1%  KeyedLoadIC: args_count: 0
+      1    0.0%    0.1%  Function: ~<anonymous> dns.js:1
+      1    0.0%    0.1%  Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/languages/en.js:1
+      1    0.0%    0.1%  Builtin: A builtin from the snapshot {5}
+      1    0.0%    0.1%  Builtin: A builtin from the snapshot {2}
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [GC]:
+   ticks  total  nonlib   name
+    174    7.2%
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 2.0% are not shown.
+
+   ticks parent  name
+   1428   59.4%  /usr/local/bin/node
+    121    8.5%    LazyCompile: *split native string.js:554
+     61   50.4%      LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+     58   95.1%        LazyCompile: *<anonymous>
+     58  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+     58  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+      3    4.9%        Function: ~<anonymous>
+      3  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+      3  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+     57   47.1%      LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+     54   94.7%        LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     54  100.0%          LazyCompile: ~forEach native array.js:1087
+     54  100.0%            LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      3    5.3%        LazyCompile: ~parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      3  100.0%          LazyCompile: ~forEach native array.js:1087
+      3  100.0%            LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+    117    8.2%    LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+    117  100.0%      LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     74   63.2%        LazyCompile: ~forEach native array.js:1087
+     74  100.0%          LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     74  100.0%            LazyCompile: ~module.exports.handleSelectQuery /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:212
+     43   36.8%        LazyCompile: *forEach native array.js:1087
+     35   81.4%          LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     35  100.0%            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      8   18.6%          LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      8  100.0%            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+    104    7.3%    LazyCompile: *<anonymous>
+    104  100.0%      LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+    104  100.0%        LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+    104  100.0%          LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:95
+     89   85.6%            LazyCompile: *EventEmitter.emit events.js:53
+     15   14.4%            LazyCompile: ~EventEmitter.emit events.js:53
+     67    4.7%    LazyCompile: *keys native v8natives.js:333
+     67  100.0%      LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+     52   77.6%        LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     41   78.8%          LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     41  100.0%            LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     11   21.2%          LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     11  100.0%            LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      6    9.0%        LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      5   83.3%          LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      5  100.0%            LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      1   16.7%          LazyCompile: ~forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      1  100.0%            LazyCompile: ~parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      5    7.5%        LazyCompile: ~assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      5  100.0%          LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      5  100.0%            LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      4    6.0%        LazyCompile: *forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      4  100.0%          LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      4  100.0%            LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     67    4.7%    LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     59   88.1%      LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     59  100.0%        LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     32   54.2%          LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     32  100.0%            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     27   45.8%          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     27  100.0%            LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      8   11.9%      LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      8  100.0%        LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      5   62.5%          LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      5  100.0%            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+      3   37.5%          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      3  100.0%            LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     63    4.4%    LazyCompile: *Buffer.toString buffer.js:392
+     60   95.2%      LazyCompile: *Connection.readString /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:639
+     60  100.0%        LazyCompile: *Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+     32   53.3%          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+     32  100.0%            LazyCompile: ~b native v8natives.js:1582
+     28   46.7%          LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+     28  100.0%            LazyCompile: ~b native v8natives.js:1582
+      2    3.2%      LazyCompile: *Connection.parseD /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:527
+      2  100.0%        LazyCompile: ~Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+      2  100.0%          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+      2  100.0%            LazyCompile: ~b native v8natives.js:1582
+     51    3.6%    LazyCompile: ~Module._compile module.js:374
+     51  100.0%      LazyCompile: ~Module._extensions..js module.js:472
+     41   80.4%        LazyCompile: ~Module.load module.js:346
+     41  100.0%          LazyCompile: Module._load module.js:275
+     23   56.1%            LazyCompile: ~Module.require module.js:361
+     18   43.9%            LazyCompile: *Module.require module.js:361
+     10   19.6%        LazyCompile: *Module.load module.js:346
+     10  100.0%          LazyCompile: Module._load module.js:275
+     10  100.0%            LazyCompile: *Module.require module.js:361
+     40    2.8%    LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     34   85.0%      LazyCompile: *forEach native array.js:1087
+     27   79.4%        LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     27  100.0%          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     18   66.7%            LazyCompile: *forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      9   33.3%            LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      7   20.6%        LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      7  100.0%          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      7  100.0%            LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      6   15.0%      LazyCompile: ~forEach native array.js:1087
+      6  100.0%        LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      6  100.0%          LazyCompile: ~module.exports.handleSelectQuery /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:212
+      6  100.0%            LazyCompile: ~module.exports.AbstractQuery.send /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:112
+     39    2.7%    LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     38   97.4%      LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     20   52.6%        LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     20  100.0%          LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     20  100.0%            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     18   47.4%        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     18  100.0%          LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     18  100.0%            LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      1    2.6%      LazyCompile: *keys native v8natives.js:333
+      1  100.0%        LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      1  100.0%          LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      1  100.0%            LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     38    2.7%    LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     38  100.0%      LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     38  100.0%        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     38  100.0%          LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     36   94.7%            LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      2    5.3%            LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     29    2.0%    LazyCompile: *parseInt native v8natives.js:110
+     27   93.1%      LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+     25   92.6%        LazyCompile: *<anonymous>
+     25  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+     25  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+      2    7.4%        Function: ~<anonymous>
+      2  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+      2  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+      1    3.4%      LazyCompile: ~parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      1  100.0%        Function: ~<anonymous>
+      1  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+      1  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+      1    3.4%      LazyCompile: *parseInteger /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:171
+      1  100.0%        LazyCompile: *<anonymous>
+      1  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+      1  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+
+    217    9.0%  /lib/x86_64-linux-gnu/libc-2.17.so
+      5    2.3%    LazyCompile: *split native string.js:554
+      4   80.0%      LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      4  100.0%        LazyCompile: *<anonymous>
+      4  100.0%          LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+      4  100.0%            LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+      1   20.0%      LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      1  100.0%        LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      1  100.0%          LazyCompile: ~forEach native array.js:1087
+      1  100.0%            LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+
+
+ [Top down (heavy) profile]:
+  Note: callees occupying less than 0.1% are not shown.
+
+  inclusive      self           name
+  ticks   total  ticks   total
+   1785   74.2%      0    0.0%  LazyCompile: ~onread net.js:494
+   1782   74.1%      0    0.0%    LazyCompile: ~Readable.push _stream_readable.js:116
+   1782   74.1%      0    0.0%      LazyCompile: ~readableAddChunk _stream_readable.js:136
+   1781   74.1%      0    0.0%        LazyCompile: ~emitReadable _stream_readable.js:392
+   1781   74.1%      0    0.0%          LazyCompile: ~emitReadable_ _stream_readable.js:407
+   1636   68.0%      0    0.0%            LazyCompile: *EventEmitter.emit events.js:53
+   1636   68.0%      0    0.0%              LazyCompile: ~<anonymous> _stream_readable.js:741
+   1636   68.0%      0    0.0%                LazyCompile: *EventEmitter.emit events.js:53
+   1636   68.0%      0    0.0%                  LazyCompile: ~b native v8natives.js:1582
+   1329   55.3%      0    0.0%                    LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+   1283   53.3%      0    0.0%                      LazyCompile: *EventEmitter.emit events.js:53
+   1099   45.7%      0    0.0%                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:142
+   1099   45.7%      0    0.0%                          LazyCompile: ~Query.handleReadyForQuery /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:79
+   1099   45.7%      0    0.0%                            LazyCompile: ~EventEmitter.emit events.js:53
+   1099   45.7%      0    0.0%                              LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query.js:45
+   1098   45.7%      0    0.0%                                LazyCompile: ~module.exports.onSuccess /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query.js:62
+   1096   45.6%      0    0.0%                                  LazyCompile: ~module.exports.AbstractQuery.send /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:112
+   1095   45.5%      0    0.0%                                    LazyCompile: ~module.exports.handleSelectQuery /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:212
+    599   24.9%      0    0.0%                                      LazyCompile: ~map native array.js:1215
+    599   24.9%      0    0.0%                                        LazyCompile: ~b native v8natives.js:1582
+    535   22.2%      0    0.0%                                          LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+    535   22.2%      0    0.0%                                            LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+    535   22.2%      1    0.0%                                              LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+    533   22.2%      0    0.0%                                                LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+    533   22.2%      0    0.0%                                                  LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+    521   21.7%      3    0.1%                                                    LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+    511   21.2%      1    0.0%                                                      LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+    386   16.0%      3    0.1%                                                        LazyCompile: module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+    377   15.7%      0    0.0%                                                          LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+    372   15.5%      1    0.0%                                                            LazyCompile: *map native array.js:1215
+    370   15.4%      0    0.0%                                                              LazyCompile: ~b native v8natives.js:1582
+    370   15.4%      0    0.0%                                                                LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+    370   15.4%      0    0.0%                                                                  LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+    370   15.4%      0    0.0%                                                                    LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+    370   15.4%      0    0.0%                                                                      LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+    370   15.4%      1    0.0%                                                                        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+    354   14.7%      0    0.0%                                                                          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+    342   14.2%      2    0.1%                                                                            LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+    334   13.9%      1    0.0%                                                                              LazyCompile: module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+    322   13.4%      0    0.0%                                                                                LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+    312   13.0%      2    0.1%                                                                                  LazyCompile: *map native array.js:1215
+    307   12.8%      2    0.1%                                                                                    LazyCompile: ~b native v8natives.js:1582
+    298   12.4%      1    0.0%                                                                                      LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+    297   12.3%      2    0.1%                                                                                        LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+    293   12.2%      1    0.0%                                                                                          LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+    292   12.1%      3    0.1%                                                                                            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+    289   12.0%      0    0.0%                                                                                              LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+    259   10.8%      5    0.2%                                                                                                LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+    221    9.2%      6    0.2%                                                                                                  LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+    201    8.4%      8    0.3%                                                                                                    LazyCompile: module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     85    3.5%      0    0.0%                                                                                                      LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     82    3.4%      2    0.1%                                                                                                        LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     80    3.3%      1    0.0%                                                                                                          LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     78    3.2%      0    0.0%                                                                                                            LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     44    1.8%      1    0.0%                                                                                                              LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     31    1.3%      0    0.0%                                                                                                                LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     31    1.3%      1    0.0%                                                                                                                  LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     15    0.6%      2    0.1%                                                                                                                    LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      7    0.3%      7    0.3%                                                                                                                      /usr/local/bin/node
+      6    0.2%      0    0.0%                                                                                                                      LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      5    0.2%      0    0.0%                                                                                                                        LazyCompile: *keys native v8natives.js:333
+      5    0.2%      5    0.2%                                                                                                                          /usr/local/bin/node
+      9    0.4%      9    0.4%                                                                                                                    /usr/local/bin/node
+      4    0.2%      2    0.1%                                                                                                                    LazyCompile: toString native v8natives.js:223
+     10    0.4%      3    0.1%                                                                                                                LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      7    0.3%      7    0.3%                                                                                                                  /usr/local/bin/node
+     32    1.3%      0    0.0%                                                                                                              LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     32    1.3%      3    0.1%                                                                                                                LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     17    0.7%      0    0.0%                                                                                                                  LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     12    0.5%     12    0.5%                                                                                                                    /usr/local/bin/node
+      5    0.2%      1    0.0%                                                                                                                    LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      4    0.2%      0    0.0%                                                                                                                      LazyCompile: *keys native v8natives.js:333
+      4    0.2%      4    0.2%                                                                                                                        /usr/local/bin/node
+      7    0.3%      7    0.3%                                                                                                                  /usr/local/bin/node
+     84    3.5%      0    0.0%                                                                                                      LazyCompile: *module.exports.singularize /home/mickhansen/dev/sequelize/upstream/lib/utils.js:362
+     84    3.5%      5    0.2%                                                                                                        LazyCompile: *Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+     58    2.4%     10    0.4%                                                                                                          LazyCompile: *test native regexp.js:217
+     19    0.8%     19    0.8%                                                                                                            /usr/local/bin/node
+      3    0.1%      3    0.1%                                                                                                            RegExp: sis$
+      3    0.1%      3    0.1%                                                                                                            RegExp: ies$
+      3    0.1%      3    0.1%                                                                                                            RegExp: (s|ss|sh|ch|x|o)$
+      3    0.1%      3    0.1%                                                                                                            RegExp: (octop|vir)i$
+     10    0.4%      1    0.0%                                                                                                          LazyCompile: *replace native string.js:221
+      9    0.4%      9    0.4%                                                                                                            /usr/local/bin/node
+      7    0.3%      0    0.0%                                                                                                          LazyCompile: *Language.isUncountable /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:22
+      6    0.2%      6    0.2%                                                                                                            /usr/local/bin/node
+      3    0.1%      3    0.1%                                                                                                          /usr/local/bin/node
+     10    0.4%      1    0.0%                                                                                                      LazyCompile: *_s.camelize /home/mickhansen/dev/sequelize/upstream/node_modules/underscore.string/lib/underscore.string.js:339
+      6    0.2%      0    0.0%                                                                                                        LazyCompile: *replace native string.js:221
+      5    0.2%      0    0.0%                                                                                                          LazyCompile: ~StringReplaceGlobalRegExpWithFunction native string.js:374
+      5    0.2%      5    0.2%                                                                                                            /usr/local/bin/node
+      5    0.2%      2    0.1%                                                                                                      LazyCompile: *slice native string.js:510
+      3    0.1%      1    0.0%                                                                                                        LazyCompile: *SubString native string.js:205
+      4    0.2%      4    0.2%                                                                                                      /usr/local/bin/node
+      3    0.1%      2    0.1%                                                                                                      LazyCompile: *toLowerCase native string.js:739
+     12    0.5%     12    0.5%                                                                                                    /usr/local/bin/node
+     32    1.3%      0    0.0%                                                                                                  LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     32    1.3%      1    0.0%                                                                                                    LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     25    1.0%      0    0.0%                                                                                                      LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     13    0.5%     13    0.5%                                                                                                        /usr/local/bin/node
+      8    0.3%      0    0.0%                                                                                                        LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      8    0.3%      0    0.0%                                                                                                          LazyCompile: *keys native v8natives.js:333
+      7    0.3%      7    0.3%                                                                                                            /usr/local/bin/node
+      4    0.2%      4    0.2%                                                                                                        KeyedLoadIC: A keyed load IC from the snapshot
+      4    0.2%      4    0.2%                                                                                                      /usr/local/bin/node
+     30    1.2%      1    0.0%                                                                                                LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     29    1.2%      1    0.0%                                                                                                  LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     20    0.8%      1    0.0%                                                                                                    LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     10    0.4%      0    0.0%                                                                                                      LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+     10    0.4%      0    0.0%                                                                                                        LazyCompile: *keys native v8natives.js:333
+     10    0.4%     10    0.4%                                                                                                          /usr/local/bin/node
+      7    0.3%      7    0.3%                                                                                                      /usr/local/bin/node
+      5    0.2%      5    0.2%                                                                                                    /usr/local/bin/node
+      6    0.2%      6    0.2%                                                                                      /usr/local/bin/node
+     10    0.4%      1    0.0%                                                                                  LazyCompile: bind native v8natives.js:1578
+      6    0.2%      6    0.2%                                                                                    /usr/local/bin/node
+      3    0.1%      2    0.1%                                                                                LazyCompile: *slice native string.js:510
+      3    0.1%      1    0.0%                                                                                LazyCompile: *_s.camelize /home/mickhansen/dev/sequelize/upstream/node_modules/underscore.string/lib/underscore.string.js:339
+     11    0.5%      0    0.0%                                                                            LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     11    0.5%      1    0.0%                                                                              LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      6    0.2%      0    0.0%                                                                                LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      3    0.1%      3    0.1%                                                                                  /usr/local/bin/node
+      3    0.1%      3    0.1%                                                                                /usr/local/bin/node
+     14    0.6%      1    0.0%                                                                          LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     13    0.5%      0    0.0%                                                                            LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      9    0.4%      0    0.0%                                                                              LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      7    0.3%      7    0.3%                                                                                /usr/local/bin/node
+      5    0.2%      0    0.0%                                                            LazyCompile: bind native v8natives.js:1578
+      5    0.2%      5    0.2%                                                              /usr/local/bin/node
+      3    0.1%      3    0.1%                                                          /usr/local/bin/node
+    122    5.1%      0    0.0%                                                        LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+    119    4.9%      0    0.0%                                                          LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     91    3.8%      0    0.0%                                                            LazyCompile: ~map native array.js:1215
+     90    3.7%      0    0.0%                                                              LazyCompile: ~b native v8natives.js:1582
+     90    3.7%      0    0.0%                                                                LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     90    3.7%      0    0.0%                                                                  LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     89    3.7%      0    0.0%                                                                    LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     89    3.7%      0    0.0%                                                                      LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     88    3.7%      0    0.0%                                                                        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     86    3.6%      0    0.0%                                                                          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     83    3.5%      0    0.0%                                                                            LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     78    3.2%      0    0.0%                                                                              LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     73    3.0%      0    0.0%                                                                                LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     71    3.0%      0    0.0%                                                                                  LazyCompile: ~map native array.js:1215
+     70    2.9%      0    0.0%                                                                                    LazyCompile: ~b native v8natives.js:1582
+     69    2.9%      0    0.0%                                                                                      LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     69    2.9%      0    0.0%                                                                                        LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     69    2.9%      0    0.0%                                                                                          LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     69    2.9%      1    0.0%                                                                                            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     68    2.8%      0    0.0%                                                                                              LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     51    2.1%      0    0.0%                                                                                                LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     45    1.9%      0    0.0%                                                                                                  LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     39    1.6%      2    0.1%                                                                                                    LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     19    0.8%      0    0.0%                                                                                                      LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     19    0.8%      0    0.0%                                                                                                        LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     19    0.8%      1    0.0%                                                                                                          LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     17    0.7%      1    0.0%                                                                                                            LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     10    0.4%      0    0.0%                                                                                                              LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      6    0.2%      0    0.0%                                                                                                                LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      5    0.2%      0    0.0%                                                                                                                  LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      3    0.1%      3    0.1%                                                                                                                    /usr/local/bin/node
+      4    0.2%      1    0.0%                                                                                                                LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      6    0.2%      0    0.0%                                                                                                              LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      5    0.2%      0    0.0%                                                                                                                LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      3    0.1%      0    0.0%                                                                                                                  LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      3    0.1%      0    0.0%                                                                                                                    LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     12    0.5%      0    0.0%                                                                                                      LazyCompile: *module.exports.singularize /home/mickhansen/dev/sequelize/upstream/lib/utils.js:362
+     12    0.5%      2    0.1%                                                                                                        LazyCompile: *Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+      4    0.2%      0    0.0%                                                                                                          LazyCompile: *test native regexp.js:217
+      4    0.2%      4    0.2%                                                                                                            /usr/local/bin/node
+      3    0.1%      1    0.0%                                                                                                          LazyCompile: *Language.isUncountable /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:22
+      3    0.1%      0    0.0%                                                                                                      LazyCompile: *_s.camelize /home/mickhansen/dev/sequelize/upstream/node_modules/underscore.string/lib/underscore.string.js:339
+      3    0.1%      3    0.1%                                                                                                      /usr/local/bin/node
+      5    0.2%      5    0.2%                                                                                                    /usr/local/bin/node
+      6    0.2%      0    0.0%                                                                                                  LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      3    0.1%      0    0.0%                                                                                                    LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      3    0.1%      1    0.0%                                                                                                      LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      3    0.1%      0    0.0%                                                                                                    LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+     17    0.7%      0    0.0%                                                                                                LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      8    0.3%      0    0.0%                                                                                                  LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      5    0.2%      0    0.0%                                                                                                    LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      3    0.1%      0    0.0%                                                                                                      LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      3    0.1%      0    0.0%                                                                                                        LazyCompile: *keys native v8natives.js:333
+      3    0.1%      3    0.1%                                                                                                          /usr/local/bin/node
+      8    0.3%      0    0.0%                                                                                                  LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      7    0.3%      0    0.0%                                                                                                    LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      3    0.1%      1    0.0%                                                                                                      LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      3    0.1%      3    0.1%                                                                                                      /usr/local/bin/node
+      3    0.1%      3    0.1%                                                                              /usr/local/bin/node
+     25    1.0%      0    0.0%                                                            LazyCompile: *map native array.js:1215
+     25    1.0%      0    0.0%                                                              LazyCompile: ~b native v8natives.js:1582
+     25    1.0%      0    0.0%                                                                LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     25    1.0%      0    0.0%                                                                  LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     25    1.0%      0    0.0%                                                                    LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     25    1.0%      0    0.0%                                                                      LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     25    1.0%      0    0.0%                                                                        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     24    1.0%      0    0.0%                                                                          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     23    1.0%      1    0.0%                                                                            LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     22    0.9%      0    0.0%                                                                              LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     22    0.9%      0    0.0%                                                                                LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     22    0.9%      0    0.0%                                                                                  LazyCompile: *map native array.js:1215
+     22    0.9%      0    0.0%                                                                                    LazyCompile: ~b native v8natives.js:1582
+     22    0.9%      0    0.0%                                                                                      LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     22    0.9%      0    0.0%                                                                                        LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     22    0.9%      0    0.0%                                                                                          LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     22    0.9%      0    0.0%                                                                                            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     22    0.9%      1    0.0%                                                                                              LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     19    0.8%      0    0.0%                                                                                                LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     17    0.7%      0    0.0%                                                                                                  LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     15    0.6%      0    0.0%                                                                                                    LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     10    0.4%      0    0.0%                                                                                                      LazyCompile: *module.exports.singularize /home/mickhansen/dev/sequelize/upstream/lib/utils.js:362
+     10    0.4%      1    0.0%                                                                                                        LazyCompile: *Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+      6    0.2%      2    0.1%                                                                                                          LazyCompile: *test native regexp.js:217
+      4    0.2%      0    0.0%                                                                                                      LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+      4    0.2%      0    0.0%                                                                                                        LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      4    0.2%      1    0.0%                                                                                                          LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+      3    0.1%      0    0.0%                                                                                                            LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      3    0.1%      1    0.0%                                                                                                              LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      3    0.1%      0    0.0%                                                            LazyCompile: bind native v8natives.js:1578
+      3    0.1%      3    0.1%                                                              /usr/local/bin/node
+      3    0.1%      3    0.1%                                                          /usr/local/bin/node
+      6    0.2%      0    0.0%                                                      LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      6    0.2%      0    0.0%                                                        LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      3    0.1%      0    0.0%                                                          LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+     11    0.5%      0    0.0%                                                    LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+     11    0.5%      1    0.0%                                                      LazyCompile: baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      5    0.2%      0    0.0%                                                        LazyCompile: *assign /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1679
+      4    0.2%      4    0.2%                                                        /usr/local/bin/node
+     60    2.5%      0    0.0%                                          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     52    2.2%      0    0.0%                                            LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     29    1.2%      0    0.0%                                              LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     29    1.2%      0    0.0%                                                LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     29    1.2%      0    0.0%                                                  LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     27    1.1%      0    0.0%                                                    LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     27    1.1%      0    0.0%                                                      LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     27    1.1%      0    0.0%                                                        LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     15    0.6%      0    0.0%                                                          LazyCompile: ~map native array.js:1215
+     15    0.6%      0    0.0%                                                            LazyCompile: ~b native v8natives.js:1582
+     14    0.6%      0    0.0%                                                              LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     14    0.6%      0    0.0%                                                                LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     14    0.6%      0    0.0%                                                                  LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     14    0.6%      0    0.0%                                                                    LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     14    0.6%      0    0.0%                                                                      LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     13    0.5%      0    0.0%                                                                        LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     13    0.5%      0    0.0%                                                                          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     13    0.5%      0    0.0%                                                                            LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     13    0.5%      0    0.0%                                                                              LazyCompile: ~map native array.js:1215
+     13    0.5%      0    0.0%                                                                                LazyCompile: ~b native v8natives.js:1582
+     13    0.5%      0    0.0%                                                                                  LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     13    0.5%      0    0.0%                                                                                    LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     13    0.5%      0    0.0%                                                                                      LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     13    0.5%      0    0.0%                                                                                        LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     13    0.5%      0    0.0%                                                                                          LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     11    0.5%      0    0.0%                                                                                            LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      9    0.4%      0    0.0%                                                                                              LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      7    0.3%      0    0.0%                                                                                                LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      3    0.1%      0    0.0%                                                                                                  LazyCompile: ~module.exports.singularize /home/mickhansen/dev/sequelize/upstream/lib/utils.js:362
+      3    0.1%      0    0.0%                                                                                                    LazyCompile: ~Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+     12    0.5%      0    0.0%                                                          LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     12    0.5%      0    0.0%                                                            LazyCompile: ~map native array.js:1215
+     12    0.5%      0    0.0%                                                              LazyCompile: ~b native v8natives.js:1582
+     12    0.5%      0    0.0%                                                                LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     12    0.5%      0    0.0%                                                                  LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     12    0.5%      0    0.0%                                                                    LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     12    0.5%      0    0.0%                                                                      LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     12    0.5%      0    0.0%                                                                        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     11    0.5%      0    0.0%                                                                          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     11    0.5%      0    0.0%                                                                            LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     11    0.5%      0    0.0%                                                                              LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     10    0.4%      0    0.0%                                                                                LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     10    0.4%      0    0.0%                                                                                  LazyCompile: ~map native array.js:1215
+     10    0.4%      0    0.0%                                                                                    LazyCompile: ~b native v8natives.js:1582
+     10    0.4%      0    0.0%                                                                                      LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     10    0.4%      0    0.0%                                                                                        LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     10    0.4%      0    0.0%                                                                                          LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     10    0.4%      0    0.0%                                                                                            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     10    0.4%      0    0.0%                                                                                              LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      9    0.4%      0    0.0%                                                                                                LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      8    0.3%      0    0.0%                                                                                                  LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      8    0.3%      0    0.0%                                                                                                    LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      4    0.2%      0    0.0%                                                                                                      LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+      4    0.2%      0    0.0%                                                                                                        LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      4    0.2%      0    0.0%                                                                                                          LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+      4    0.2%      0    0.0%                                                                                                            LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      3    0.1%      0    0.0%                                                                                                      LazyCompile: *module.exports.singularize /home/mickhansen/dev/sequelize/upstream/lib/utils.js:362
+      3    0.1%      2    0.1%                                                                                                        LazyCompile: *Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+     23    1.0%      0    0.0%                                              LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     23    1.0%      0    0.0%                                                LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     23    1.0%      0    0.0%                                                  LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     23    1.0%      1    0.0%                                                    LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     22    0.9%      0    0.0%                                                      LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     21    0.9%      0    0.0%                                                        LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     21    0.9%      0    0.0%                                                          LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     21    0.9%      0    0.0%                                                            LazyCompile: ~map native array.js:1215
+     21    0.9%      0    0.0%                                                              LazyCompile: ~b native v8natives.js:1582
+     21    0.9%      0    0.0%                                                                LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     21    0.9%      0    0.0%                                                                  LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     21    0.9%      0    0.0%                                                                    LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     21    0.9%      0    0.0%                                                                      LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     21    0.9%      0    0.0%                                                                        LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     19    0.8%      0    0.0%                                                                          LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     18    0.7%      0    0.0%                                                                            LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     16    0.7%      0    0.0%                                                                              LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+     16    0.7%      0    0.0%                                                                                LazyCompile: *module.exports.DAOFactory.bulkBuild /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:685
+     16    0.7%      0    0.0%                                                                                  LazyCompile: ~map native array.js:1215
+     16    0.7%      0    0.0%                                                                                    LazyCompile: ~b native v8natives.js:1582
+     16    0.7%      0    0.0%                                                                                      LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+     16    0.7%      0    0.0%                                                                                        LazyCompile: *module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+     16    0.7%      0    0.0%                                                                                          LazyCompile: *DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+     16    0.7%      0    0.0%                                                                                            LazyCompile: *module.exports.DAO /home/mickhansen/dev/sequelize/upstream/lib/dao.js:11
+     16    0.7%      0    0.0%                                                                                              LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+     14    0.6%      0    0.0%                                                                                                LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+     10    0.4%      0    0.0%                                                                                                  LazyCompile: module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      8    0.3%      0    0.0%                                                                                                    LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      5    0.2%      0    0.0%                                                                                                      LazyCompile: *module.exports.singularize /home/mickhansen/dev/sequelize/upstream/lib/utils.js:362
+      5    0.2%      1    0.0%                                                                                                        LazyCompile: *Language.isSingular /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/inflection.js:143
+      4    0.2%      1    0.0%                                                                                                          LazyCompile: *test native regexp.js:217
+      3    0.1%      0    0.0%                                                                                                  LazyCompile: *clone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1746
+      3    0.1%      0    0.0%                                                                                                    LazyCompile: ~baseClone /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:747
+      8    0.3%      0    0.0%                                            LazyCompile: ~module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+      8    0.3%      0    0.0%                                              LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      7    0.3%      0    0.0%                                                LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      7    0.3%      0    0.0%                                                  LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      7    0.3%      0    0.0%                                                    LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      7    0.3%      0    0.0%                                                      LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      7    0.3%      0    0.0%                                                        LazyCompile: ~map native array.js:1215
+      7    0.3%      0    0.0%                                                          LazyCompile: ~b native v8natives.js:1582
+      7    0.3%      0    0.0%                                                            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+      7    0.3%      0    0.0%                                                              LazyCompile: ~module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+      7    0.3%      0    0.0%                                                                LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      7    0.3%      0    0.0%                                                                  LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      7    0.3%      0    0.0%                                                                    LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      7    0.3%      0    0.0%                                                                      LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      6    0.2%      0    0.0%                                                                        LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      6    0.2%      0    0.0%                                                                          LazyCompile: ~map native array.js:1215
+      6    0.2%      0    0.0%                                                                            LazyCompile: ~b native v8natives.js:1582
+      6    0.2%      0    0.0%                                                                              LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:698
+      5    0.2%      0    0.0%                                                                                LazyCompile: ~module.exports.DAOFactory.build /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:666
+      5    0.2%      0    0.0%                                                                                  LazyCompile: ~DAO /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:175
+      5    0.2%      0    0.0%                                                                                    LazyCompile: ~module.exports.initValues /home/mickhansen/dev/sequelize/upstream/lib/dao.js:646
+      5    0.2%      0    0.0%                                                                                      LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      4    0.2%      0    0.0%                                                                                        LazyCompile: ~module.exports.DAO.set /home/mickhansen/dev/sequelize/upstream/lib/dao.js:109
+      4    0.2%      0    0.0%                                                                                          LazyCompile: ~module.exports.DAO._setInclude /home/mickhansen/dev/sequelize/upstream/lib/dao.js:232
+      3    0.1%      3    0.1%                                          /usr/local/bin/node
+    330   13.7%      0    0.0%                                      LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+    330   13.7%      0    0.0%                                        LazyCompile: ~forEach native array.js:1087
+    251   10.4%      1    0.0%                                          LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+    233    9.7%     20    0.8%                                            LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+     74    3.1%     74    3.1%                                              /usr/local/bin/node
+     63    2.6%      8    0.3%                                              LazyCompile: *split native string.js:554
+     54    2.2%     54    2.2%                                                /usr/local/bin/node
+     28    1.2%      1    0.0%                                              LazyCompile: FILTER_KEY native runtime.js:398
+     22    0.9%     22    0.9%                                                /usr/local/bin/node
+      3    0.1%      2    0.1%                                                LazyCompile: ToString native runtime.js:550
+     21    0.9%      6    0.2%                                              LazyCompile: hasOwnProperty native v8natives.js:249
+     13    0.5%     13    0.5%                                                /usr/local/bin/node
+      9    0.4%      1    0.0%                                              Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/languages/en.js:1
+      7    0.3%      7    0.3%                                                /usr/local/bin/node
+      6    0.2%      6    0.2%                                              CallMegamorphic: args_count: 1 {1}
+      5    0.2%      5    0.2%                                              KeyedLoadIC: A keyed load IC from the snapshot
+      3    0.1%      3    0.1%                                              Builtin: A builtin from the snapshot {3}
+      6    0.2%      6    0.2%                                            /usr/local/bin/node
+      4    0.2%      1    0.0%                                            LazyCompile: DELETE native runtime.js:348
+     32    1.3%      0    0.0%                                          LazyCompile: ~parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     18    0.7%      0    0.0%                                            LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     18    0.7%      0    0.0%                                              LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     18    0.7%      0    0.0%                                                LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     18    0.7%      0    0.0%                                                  LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     18    0.7%      0    0.0%                                                    LazyCompile: *forEach native array.js:1087
+     13    0.5%      0    0.0%                                                      LazyCompile: ~parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     13    0.5%      0    0.0%                                                        LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     13    0.5%      0    0.0%                                                          LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     13    0.5%      0    0.0%                                                            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     12    0.5%      0    0.0%                                                              LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     12    0.5%      0    0.0%                                                                LazyCompile: *forEach native array.js:1087
+      6    0.2%      0    0.0%                                                                  LazyCompile: ~parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      6    0.2%      0    0.0%                                                                    LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      6    0.2%      0    0.0%                                                                      LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      6    0.2%      0    0.0%                                                                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      5    0.2%      0    0.0%                                                                          LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      5    0.2%      1    0.0%                                                                            LazyCompile: *forEach native array.js:1087
+      4    0.2%      1    0.0%                                                                  LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      5    0.2%      0    0.0%                                                      LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     14    0.6%      0    0.0%                                            LazyCompile: ~forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     14    0.6%      0    0.0%                                              LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     14    0.6%      0    0.0%                                                LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     14    0.6%      0    0.0%                                                  LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     10    0.4%      0    0.0%                                                    LazyCompile: *forEach native array.js:1087
+      8    0.3%      0    0.0%                                                      LazyCompile: ~parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      8    0.3%      0    0.0%                                                        LazyCompile: ~forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      8    0.3%      0    0.0%                                                          LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      8    0.3%      0    0.0%                                                            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      7    0.3%      0    0.0%                                                              LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      7    0.3%      0    0.0%                                                                LazyCompile: *forEach native array.js:1087
+      6    0.2%      0    0.0%                                                                  LazyCompile: ~parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      4    0.2%      0    0.0%                                                                    LazyCompile: ~forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      4    0.2%      0    0.0%                                                                      LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      3    0.1%      0    0.0%                                                                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      4    0.2%      0    0.0%                                                    LazyCompile: ~forEach native array.js:1087
+     30    1.2%      0    0.0%                                          LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     30    1.2%      0    0.0%                                            LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     30    1.2%      0    0.0%                                              LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     30    1.2%      0    0.0%                                                LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     30    1.2%      0    0.0%                                                  LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     30    1.2%      0    0.0%                                                    LazyCompile: *forEach native array.js:1087
+     22    0.9%      0    0.0%                                                      LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     22    0.9%      0    0.0%                                                        LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     22    0.9%      0    0.0%                                                          LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     21    0.9%      0    0.0%                                                            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     20    0.8%      0    0.0%                                                              LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     20    0.8%      0    0.0%                                                                LazyCompile: *forEach native array.js:1087
+     11    0.5%      1    0.0%                                                                  LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      4    0.2%      2    0.1%                                                                    LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      8    0.3%      0    0.0%                                                                  LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      7    0.3%      0    0.0%                                                                    LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+      7    0.3%      0    0.0%                                                                      LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      5    0.2%      0    0.0%                                                                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      5    0.2%      2    0.1%                                                                          LazyCompile: ~module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      3    0.1%      0    0.0%                                                                            LazyCompile: *forEach native array.js:1087
+      8    0.3%      0    0.0%                                                      LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     14    0.6%      1    0.0%                                          LazyCompile: ~parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      6    0.2%      1    0.0%                                            LazyCompile: ~Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      6    0.2%      0    0.0%                                            LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      3    0.1%      0    0.0%                                              LazyCompile: *split native string.js:554
+      3    0.1%      3    0.1%                                                /usr/local/bin/node
+    166    6.9%      0    0.0%                                      LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+    166    6.9%      0    0.0%                                        LazyCompile: ~forEach native array.js:1087
+    166    6.9%      0    0.0%                                          LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+    166    6.9%      1    0.0%                                            LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+    122    5.1%      0    0.0%                                              LazyCompile: *forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+    122    5.1%      0    0.0%                                                LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+    122    5.1%      0    0.0%                                                  LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+    121    5.0%      0    0.0%                                                    LazyCompile: *forEach native array.js:1087
+     81    3.4%      0    0.0%                                                      LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     80    3.3%      0    0.0%                                                        LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     80    3.3%      0    0.0%                                                          LazyCompile: *forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     79    3.3%      0    0.0%                                                            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     77    3.2%      1    0.0%                                                              LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     76    3.2%      0    0.0%                                                                LazyCompile: *forEach native array.js:1087
+     44    1.8%      1    0.0%                                                                  LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     40    1.7%      1    0.0%                                                                    LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     38    1.6%      1    0.0%                                                                      LazyCompile: *forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     33    1.4%      0    0.0%                                                                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     30    1.2%      1    0.0%                                                                          LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     29    1.2%      0    0.0%                                                                            LazyCompile: *forEach native array.js:1087
+     25    1.0%      2    0.1%                                                                              LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     13    0.5%      1    0.0%                                                                                LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+     10    0.4%     10    0.4%                                                                                  /usr/local/bin/node
+      3    0.1%      0    0.0%                                                                                LazyCompile: <anonymous> native v8natives.js:1271
+      3    0.1%      0    0.0%                                                                                  LazyCompile: ToObject native runtime.js:567
+      3    0.1%      2    0.1%                                                                              LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+      3    0.1%      0    0.0%                                                                        LazyCompile: *keys /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1617
+      3    0.1%      0    0.0%                                                                          LazyCompile: *keys native v8natives.js:333
+      3    0.1%      3    0.1%                                                                            /usr/local/bin/node
+     31    1.3%      2    0.1%                                                                  LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     11    0.5%      2    0.1%                                                                    LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      8    0.3%      8    0.3%                                                                      /usr/local/bin/node
+      9    0.4%      9    0.4%                                                                    /usr/local/bin/node
+      6    0.2%      0    0.0%                                                                    LazyCompile: DELETE native runtime.js:348
+      6    0.2%      6    0.2%                                                                      /usr/local/bin/node
+     39    1.6%      3    0.1%                                                      LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+     11    0.5%      3    0.1%                                                        LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      8    0.3%      8    0.3%                                                          /usr/local/bin/node
+      8    0.3%      8    0.3%                                                        /usr/local/bin/node
+      7    0.3%      0    0.0%                                                        LazyCompile: DELETE native runtime.js:348
+      7    0.3%      7    0.3%                                                          /usr/local/bin/node
+      5    0.2%      1    0.0%                                                        LazyCompile: hasOwnProperty native v8natives.js:249
+      3    0.1%      3    0.1%                                                          /usr/local/bin/node
+      3    0.1%      1    0.0%                                                        LazyCompile: <anonymous> native v8natives.js:1271
+     43    1.8%      0    0.0%                                              LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     42    1.7%      0    0.0%                                                LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     42    1.7%      0    0.0%                                                  LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     42    1.7%      1    0.0%                                                    LazyCompile: *forEach native array.js:1087
+     29    1.2%      0    0.0%                                                      LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     29    1.2%      0    0.0%                                                        LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     29    1.2%      0    0.0%                                                          LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+     27    1.1%      1    0.0%                                                            LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+     26    1.1%      0    0.0%                                                              LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+     26    1.1%      1    0.0%                                                                LazyCompile: *forEach native array.js:1087
+     13    0.5%      0    0.0%                                                                  LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      5    0.2%      5    0.2%                                                                    /usr/local/bin/node
+      3    0.1%      0    0.0%                                                                    LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      3    0.1%      3    0.1%                                                                      /usr/local/bin/node
+      3    0.1%      0    0.0%                                                                    LazyCompile: DELETE native runtime.js:348
+     11    0.5%      0    0.0%                                                                  LazyCompile: parseChildren /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:348
+     10    0.4%      0    0.0%                                                                    LazyCompile: *forEach /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:3290
+     10    0.4%      0    0.0%                                                                      LazyCompile: ~forOwn /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:2094
+      9    0.4%      0    0.0%                                                                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:349
+      9    0.4%      0    0.0%                                                                          LazyCompile: module.exports.groupJoinData /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:342
+      8    0.3%      1    0.0%                                                                            LazyCompile: *forEach native array.js:1087
+      5    0.2%      0    0.0%                                                                              LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      3    0.1%      1    0.0%                                                                                LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+     12    0.5%      1    0.0%                                                      LazyCompile: parseRow /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:365
+      5    0.2%      0    0.0%                                                        LazyCompile: Dottie.transform /home/mickhansen/dev/dottie.js/dottie.js:92
+      5    0.2%      5    0.2%                                                          /usr/local/bin/node
+      4    0.2%      4    0.2%                                                        /usr/local/bin/node
+    183    7.6%      0    0.0%                        LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:95
+    183    7.6%      0    0.0%                          LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+    182    7.6%      0    0.0%                            LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+    181    7.5%      4    0.2%                              LazyCompile: *<anonymous>
+    126    5.2%     11    0.5%                                LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+     29    1.2%      5    0.2%                                  LazyCompile: *split native string.js:554
+     22    0.9%     22    0.9%                                    /usr/local/bin/node
+     25    1.0%      5    0.2%                                  LazyCompile: *UTC native date.js:294
+      5    0.2%      0    0.0%                                    LazyCompile: *TimeClip native date.js:128
+      5    0.2%      3    0.1%                                    LazyCompile: *MakeTime native date.js:72
+      4    0.2%      0    0.0%                                    LazyCompile: ToNumber native runtime.js:527
+      4    0.2%      4    0.2%                                      /usr/local/bin/node
+      4    0.2%      2    0.1%                                    LazyCompile: *MakeDay native date.js:96
+     24    1.0%      4    0.2%                                  LazyCompile: *exec native regexp.js:168
+     15    0.6%      6    0.2%                                    LazyCompile: *BuildResultFromMatchInfo native regexp.js:130
+      5    0.2%      5    0.2%                                      Stub: SubStringStub
+      4    0.2%      4    0.2%                                      /usr/local/bin/node
+      4    0.2%      4    0.2%                                    Stub: RegExpExecStub
+     15    0.6%      4    0.2%                                  LazyCompile: *parseInt native v8natives.js:110
+     11    0.5%     11    0.5%                                    /usr/local/bin/node
+      5    0.2%      2    0.1%                                  LazyCompile: <anonymous> native date.js:145
+      3    0.1%      3    0.1%                                    /usr/local/bin/node
+      5    0.2%      0    0.0%                                  LazyCompile: *parseFloat native v8natives.js:144
+      5    0.2%      5    0.2%                                    /usr/local/bin/node
+      3    0.1%      3    0.1%                                  Stub: RecordWriteStub {1}
+     42    1.7%     42    1.7%                                /usr/local/bin/node
+      4    0.2%      4    0.2%                                KeyedCallMegamorphic: args_count: 1
+     44    1.8%      3    0.1%                      LazyCompile: *Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+     35    1.5%      1    0.0%                        LazyCompile: *Connection.readString /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:639
+     34    1.4%      3    0.1%                          LazyCompile: *Buffer.toString buffer.js:392
+     29    1.2%     29    1.2%                            /usr/local/bin/node
+      5    0.2%      4    0.2%                        LazyCompile: *Buffer.readInt32BE buffer.js:748
+    306   12.7%      0    0.0%                    LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+    249   10.4%      1    0.0%                      LazyCompile: *EventEmitter.emit events.js:53
+    248   10.3%      0    0.0%                        LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:95
+    248   10.3%      0    0.0%                          LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+    244   10.1%      0    0.0%                            LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+    243   10.1%      3    0.1%                              LazyCompile: *<anonymous>
+    180    7.5%      7    0.3%                                LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+     62    2.6%      2    0.1%                                  LazyCompile: *exec native regexp.js:168
+     33    1.4%      8    0.3%                                    LazyCompile: *BuildResultFromMatchInfo native regexp.js:130
+     14    0.6%     14    0.6%                                      /usr/local/bin/node
+      8    0.3%      8    0.3%                                      Stub: SubStringStub
+     11    0.5%     11    0.5%                                    Stub: RegExpExecStub
+      9    0.4%      9    0.4%                                    RegExp: (\\d{1\,})-(\\d{2})-(\\d{2}) (\\d{2}):(\\d{2}):(\\d{2})(\\.\\d{1\,})?
+      4    0.2%      4    0.2%                                    RegExp: ([Z|+\\-])(\\d{2})?:?(\\d{2})?
+     38    1.6%      3    0.1%                                  LazyCompile: *split native string.js:554
+     31    1.3%     31    1.3%                                    /usr/local/bin/node
+      3    0.1%      3    0.1%                                    /lib/x86_64-linux-gnu/libc-2.17.so
+     22    0.9%      4    0.2%                                  LazyCompile: *UTC native date.js:294
+      5    0.2%      2    0.1%                                    LazyCompile: ToNumber native runtime.js:527
+      3    0.1%      3    0.1%                                      /usr/local/bin/node
+      5    0.2%      2    0.1%                                    LazyCompile: *MakeDay native date.js:96
+      4    0.2%      1    0.0%                                    LazyCompile: *TimeClip native date.js:128
+      4    0.2%      2    0.1%                                    LazyCompile: *MakeTime native date.js:72
+     15    0.6%      4    0.2%                                  LazyCompile: *parseInt native v8natives.js:110
+      9    0.4%      9    0.4%                                    /usr/local/bin/node
+     10    0.4%      4    0.2%                                  LazyCompile: *test native regexp.js:217
+      5    0.2%      5    0.2%                                    Stub: RegExpExecStub
+     10    0.4%      0    0.0%                                  LazyCompile: *parseFloat native v8natives.js:144
+     10    0.4%     10    0.4%                                    /usr/local/bin/node
+      5    0.2%      2    0.1%                                  LazyCompile: <anonymous> native date.js:145
+      5    0.2%      5    0.2%                                  /usr/local/bin/node
+     47    2.0%     47    2.0%                                /usr/local/bin/node
+      5    0.2%      5    0.2%                                /lib/x86_64-linux-gnu/libpthread-2.17.so
+      4    0.2%      0    0.0%                                LazyCompile: *parseFloat native v8natives.js:144
+      4    0.2%      4    0.2%                                  /usr/local/bin/node
+      4    0.2%      1    0.0%                            LazyCompile: *EventEmitter.emit events.js:53
+     57    2.4%      2    0.1%                      LazyCompile: *Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+     48    2.0%      2    0.1%                        LazyCompile: *Connection.readString /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:639
+     46    1.9%      5    0.2%                          LazyCompile: *Buffer.toString buffer.js:392
+     28    1.2%     28    1.2%                            /usr/local/bin/node
+      7    0.3%      2    0.1%                            LazyCompile: *toLowerCase native string.js:739
+      4    0.2%      4    0.2%                              /usr/local/bin/node
+      3    0.1%      2    0.1%                            LazyCompile: <anonymous> native string.js:36
+      4    0.2%      4    0.2%                        /usr/local/bin/node
+    145    6.0%      0    0.0%            LazyCompile: ~EventEmitter.emit events.js:53
+    145    6.0%      0    0.0%              LazyCompile: ~<anonymous> _stream_readable.js:741
+    145    6.0%      0    0.0%                LazyCompile: ~EventEmitter.emit events.js:53
+    145    6.0%      0    0.0%                  LazyCompile: ~b native v8natives.js:1582
+    145    6.0%      1    0.0%                    LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:90
+    107    4.4%      0    0.0%                      LazyCompile: ~EventEmitter.emit events.js:53
+     83    3.5%      0    0.0%                        LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:95
+     83    3.5%      0    0.0%                          LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+     82    3.4%      0    0.0%                            LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+     53    2.2%      1    0.0%                              LazyCompile: *<anonymous>
+     35    1.5%      6    0.2%                                LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      6    0.2%      1    0.0%                                  LazyCompile: *parseInt native v8natives.js:110
+      5    0.2%      5    0.2%                                    /usr/local/bin/node
+      6    0.2%      2    0.1%                                  LazyCompile: *exec native regexp.js:168
+      5    0.2%      1    0.0%                                  LazyCompile: *UTC native date.js:294
+      4    0.2%      0    0.0%                                  LazyCompile: *split native string.js:554
+      4    0.2%      4    0.2%                                    /usr/local/bin/node
+      3    0.1%      0    0.0%                                  LazyCompile: *parseFloat native v8natives.js:144
+      3    0.1%      3    0.1%                                    /usr/local/bin/node
+     15    0.6%     15    0.6%                                /usr/local/bin/node
+     28    1.2%      0    0.0%                              Function: ~<anonymous>
+     12    0.5%      0    0.0%                                LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      3    0.1%      0    0.0%                                  LazyCompile: *split native string.js:554
+      3    0.1%      3    0.1%                                    /usr/local/bin/node
+      3    0.1%      1    0.0%                                  LazyCompile: *parseInt native v8natives.js:110
+      8    0.3%      8    0.3%                                /usr/local/bin/node
+      5    0.2%      0    0.0%                                LazyCompile: ~parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      4    0.2%      1    0.0%                                  LazyCompile: *exec native regexp.js:168
+     15    0.6%      0    0.0%                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:95
+     15    0.6%      0    0.0%                          LazyCompile: ~Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+     15    0.6%      0    0.0%                            LazyCompile: ~Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+     14    0.6%      0    0.0%                              Function: ~<anonymous>
+      6    0.2%      0    0.0%                                LazyCompile: *parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      4    0.2%      0    0.0%                                  LazyCompile: *exec native regexp.js:168
+      3    0.1%      0    0.0%                                    LazyCompile: *BuildResultFromMatchInfo native regexp.js:130
+      4    0.2%      4    0.2%                                /usr/local/bin/node
+      3    0.1%      0    0.0%                                LazyCompile: ~parseDate /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/textParsers.js:4
+      5    0.2%      0    0.0%                        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:142
+      4    0.2%      0    0.0%                          LazyCompile: ~Query.handleReadyForQuery /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:79
+      4    0.2%      0    0.0%                            LazyCompile: ~EventEmitter.emit events.js:53
+      4    0.2%      0    0.0%                              LazyCompile: ~timezoneCallback /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/connector-manager.js:122
+      4    0.2%      0    0.0%                                LazyCompile: ~EventEmitter.emit events.js:53
+      3    0.1%      0    0.0%                                  LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/connector-manager.js:55
+     15    0.6%      4    0.2%                      LazyCompile: *Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+      7    0.3%      0    0.0%                        LazyCompile: *Connection.readString /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:639
+      7    0.3%      0    0.0%                          LazyCompile: *Buffer.toString buffer.js:392
+      3    0.1%      3    0.1%                            /usr/local/bin/node
+     14    0.6%      0    0.0%                      LazyCompile: ~Connection.parseMessage /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:339
+      7    0.3%      0    0.0%                        LazyCompile: ~Connection.parseD /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:527
+      4    0.2%      0    0.0%                          LazyCompile: *Connection._readValue /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:537
+      3    0.1%      0    0.0%                            LazyCompile: *Buffer.toString buffer.js:392
+      3    0.1%      0    0.0%                        LazyCompile: *Connection.parseD /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:527
+      3    0.1%      0    0.0%                      LazyCompile: *EventEmitter.emit events.js:53
+      3    0.1%      0    0.0%                        LazyCompile: *<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:95
+      3    0.1%      0    0.0%                          LazyCompile: *Query.handleDataRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:61
+      3    0.1%      0    0.0%                            LazyCompile: *Result.parseRow /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:59
+      3    0.1%      0    0.0%                              LazyCompile: *<anonymous>
+
+    283   11.8%      0    0.0%  Function: ~<anonymous> node.js:27
+    282   11.7%      0    0.0%    LazyCompile: ~startup node.js:30
+    271   11.3%      0    0.0%      LazyCompile: ~Module.runMain module.js:495
+    271   11.3%      0    0.0%        LazyCompile: Module._load module.js:275
+    261   10.9%      0    0.0%          LazyCompile: ~Module.load module.js:346
+    260   10.8%      0    0.0%            LazyCompile: ~Module._extensions..js module.js:472
+    259   10.8%      0    0.0%              LazyCompile: ~Module._compile module.js:374
+    259   10.8%      0    0.0%                Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/perf.js:1
+    259   10.8%      0    0.0%                  Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/perf.js:2
+    176    7.3%      0    0.0%                    LazyCompile: ~require module.js:379
+    173    7.2%      0    0.0%                      LazyCompile: ~Module.require module.js:361
+    173    7.2%      0    0.0%                        LazyCompile: Module._load module.js:275
+    173    7.2%      0    0.0%                          LazyCompile: ~Module.load module.js:346
+    173    7.2%      0    0.0%                            LazyCompile: ~Module._extensions..js module.js:472
+    173    7.2%      0    0.0%                              LazyCompile: ~Module._compile module.js:374
+    173    7.2%      0    0.0%                                Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/index.js:1
+    173    7.2%      0    0.0%                                  LazyCompile: ~require module.js:379
+    173    7.2%      0    0.0%                                    LazyCompile: ~Module.require module.js:361
+    173    7.2%      0    0.0%                                      LazyCompile: Module._load module.js:275
+    173    7.2%      0    0.0%                                        LazyCompile: ~Module.load module.js:346
+    173    7.2%      0    0.0%                                          LazyCompile: ~Module._extensions..js module.js:472
+    172    7.2%      0    0.0%                                            LazyCompile: ~Module._compile module.js:374
+    171    7.1%      0    0.0%                                              Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/sequelize.js:1
+    170    7.1%      0    0.0%                                                LazyCompile: ~require module.js:379
+     91    3.8%      0    0.0%                                                  LazyCompile: ~Module.require module.js:361
+     91    3.8%      0    0.0%                                                    LazyCompile: Module._load module.js:275
+     89    3.7%      0    0.0%                                                      LazyCompile: ~Module.load module.js:346
+     88    3.7%      0    0.0%                                                        LazyCompile: ~Module._extensions..js module.js:472
+     88    3.7%      0    0.0%                                                          LazyCompile: ~Module._compile module.js:374
+     87    3.6%      0    0.0%                                                            Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/utils.js:1
+     86    3.6%      0    0.0%                                                              LazyCompile: ~require module.js:379
+     81    3.4%      0    0.0%                                                                LazyCompile: ~Module.require module.js:361
+     81    3.4%      0    0.0%                                                                  LazyCompile: Module._load module.js:275
+     76    3.2%      0    0.0%                                                                    LazyCompile: ~Module.load module.js:346
+     76    3.2%      0    0.0%                                                                      LazyCompile: ~Module._extensions..js module.js:472
+     76    3.2%      0    0.0%                                                                        LazyCompile: ~Module._compile module.js:374
+     43    1.8%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/emitters/custom-event-emitter.js:1
+     43    1.8%      0    0.0%                                                                            LazyCompile: ~require module.js:379
+     42    1.7%      0    0.0%                                                                              LazyCompile: ~Module.require module.js:361
+     42    1.7%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+     41    1.7%      0    0.0%                                                                                  LazyCompile: ~Module.load module.js:346
+     41    1.7%      0    0.0%                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+     41    1.7%      0    0.0%                                                                                      LazyCompile: ~Module._compile module.js:374
+     41    1.7%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/bluebird/js/main/bluebird.js:1
+     38    1.6%      0    0.0%                                                                                          LazyCompile: ~module.exports /home/mickhansen/dev/sequelize/upstream/node_modules/bluebird/js/main/promise.js:24
+     25    1.0%      0    0.0%                                                                                            LazyCompile: ~require module.js:379
+     25    1.0%      0    0.0%                                                                                              LazyCompile: ~Module.require module.js:361
+     25    1.0%      0    0.0%                                                                                                LazyCompile: Module._load module.js:275
+     21    0.9%      0    0.0%                                                                                                  LazyCompile: ~Module.load module.js:346
+     20    0.8%      0    0.0%                                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+     17    0.7%      0    0.0%                                                                                                      LazyCompile: ~Module._compile module.js:374
+      6    0.2%      0    0.0%                                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/bluebird/js/main/async.js:1
+      4    0.2%      0    0.0%                                                                                                          LazyCompile: ~Async /home/mickhansen/dev/sequelize/upstream/node_modules/bluebird/js/main/async.js:30
+      4    0.2%      0    0.0%                                                                                                            LazyCompile: ~Queue /home/mickhansen/dev/sequelize/upstream/node_modules/bluebird/js/main/queue.js:50
+      3    0.1%      0    0.0%                                                                                                              LazyCompile: *Queue$_makeCapacity /home/mickhansen/dev/sequelize/upstream/node_modules/bluebird/js/main/queue.js:101
+      3    0.1%      3    0.1%                                                                                                                /usr/local/bin/node
+      4    0.2%      4    0.2%                                                                                                        /usr/local/bin/node
+      3    0.1%      0    0.0%                                                                                                      LazyCompile: fs.readFileSync fs.js:271
+      4    0.2%      4    0.2%                                                                                            /usr/local/bin/node
+     10    0.4%     10    0.4%                                                                          /usr/local/bin/node
+      8    0.3%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:1
+      7    0.3%      0    0.0%                                                                            Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:10
+      4    0.2%      0    0.0%                                                                              LazyCompile: ~runInContext /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:432
+      3    0.1%      3    0.1%                                                                              /usr/local/bin/node
+      8    0.3%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/sql-string.js:1
+      8    0.3%      0    0.0%                                                                            LazyCompile: ~require module.js:379
+      8    0.3%      0    0.0%                                                                              LazyCompile: ~Module.require module.js:361
+      8    0.3%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+      7    0.3%      0    0.0%                                                                                  LazyCompile: ~Module.load module.js:346
+      7    0.3%      0    0.0%                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+      7    0.3%      0    0.0%                                                                                      LazyCompile: ~Module._compile module.js:374
+      4    0.2%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/moment/moment.js:1
+      4    0.2%      0    0.0%                                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/moment/moment.js:7
+      3    0.1%      3    0.1%                                                                                        /usr/local/bin/node
+      4    0.2%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/node-uuid/uuid.js:1
+      4    0.2%      0    0.0%                                                                            Function: <anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/node-uuid/uuid.js:6
+      3    0.1%      0    0.0%                                                                              LazyCompile: ~require module.js:379
+      3    0.1%      0    0.0%                                                                                LazyCompile: ~Module.require module.js:361
+      3    0.1%      0    0.0%                                                                                  LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                                                    LazyCompile: ~NativeModule.require node.js:842
+      3    0.1%      0    0.0%                                                                                      LazyCompile: ~NativeModule.compile node.js:887
+      3    0.1%      0    0.0%                                                                                        Function: <anonymous> crypto.js:1
+      3    0.1%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/utils/parameter-validator.js:1
+      3    0.1%      0    0.0%                                                                            LazyCompile: ~require module.js:379
+      3    0.1%      0    0.0%                                                                              LazyCompile: ~Module.require module.js:361
+      3    0.1%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+      5    0.2%      0    0.0%                                                                    LazyCompile: ~Module._resolveFilename module.js:323
+      5    0.2%      0    0.0%                                                                      LazyCompile: ~Module._findPath module.js:160
+      5    0.2%      0    0.0%                                                                LazyCompile: *Module.require module.js:361
+      5    0.2%      0    0.0%                                                                  LazyCompile: Module._load module.js:275
+      5    0.2%      0    0.0%                                                                    LazyCompile: ~Module.load module.js:346
+      5    0.2%      0    0.0%                                                                      LazyCompile: ~Module._extensions..js module.js:472
+      5    0.2%      0    0.0%                                                                        LazyCompile: ~Module._compile module.js:374
+      4    0.2%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/index.js:1
+      4    0.2%      0    0.0%                                                                            LazyCompile: *require module.js:379
+      4    0.2%      0    0.0%                                                                              LazyCompile: *Module.require module.js:361
+      4    0.2%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+      4    0.2%      0    0.0%                                                                                  LazyCompile: ~Module.load module.js:346
+      4    0.2%      0    0.0%                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+      3    0.1%      0    0.0%                                                                                      LazyCompile: ~Module._compile module.js:374
+      3    0.1%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/lingo/lib/lingo.js:1
+      3    0.1%      0    0.0%                                                                                          LazyCompile: *require module.js:379
+      3    0.1%      0    0.0%                                                                                            LazyCompile: *Module.require module.js:361
+      3    0.1%      0    0.0%                                                                                              LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                                                                LazyCompile: ~Module.load module.js:346
+      3    0.1%      0    0.0%                                                                                                  LazyCompile: ~Module._extensions..js module.js:472
+     79    3.3%      0    0.0%                                                  LazyCompile: *Module.require module.js:361
+     79    3.3%      0    0.0%                                                    LazyCompile: Module._load module.js:275
+     73    3.0%      0    0.0%                                                      LazyCompile: ~Module.load module.js:346
+     73    3.0%      0    0.0%                                                        LazyCompile: ~Module._extensions..js module.js:472
+     72    3.0%      0    0.0%                                                          LazyCompile: ~Module._compile module.js:374
+     66    2.7%      0    0.0%                                                            Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1
+     65    2.7%      0    0.0%                                                              LazyCompile: *require module.js:379
+     65    2.7%      0    0.0%                                                                LazyCompile: *Module.require module.js:361
+     65    2.7%      0    0.0%                                                                  LazyCompile: Module._load module.js:275
+     64    2.7%      0    0.0%                                                                    LazyCompile: ~Module.load module.js:346
+     63    2.6%      0    0.0%                                                                      LazyCompile: ~Module._extensions..js module.js:472
+     63    2.6%      0    0.0%                                                                        LazyCompile: ~Module._compile module.js:374
+     48    2.0%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/index.js:1
+     45    1.9%      0    0.0%                                                                            LazyCompile: *require module.js:379
+     45    1.9%      0    0.0%                                                                              LazyCompile: *Module.require module.js:361
+     45    1.9%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+     42    1.7%      0    0.0%                                                                                  LazyCompile: ~Module.load module.js:346
+     42    1.7%      0    0.0%                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+     42    1.7%      0    0.0%                                                                                      LazyCompile: ~Module._compile module.js:374
+     19    0.8%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/node/query.js:1
+     18    0.7%      0    0.0%                                                                                          LazyCompile: ~require module.js:379
+     18    0.7%      0    0.0%                                                                                            LazyCompile: *Module.require module.js:361
+     18    0.7%      0    0.0%                                                                                              LazyCompile: Module._load module.js:275
+      9    0.4%      0    0.0%                                                                                                LazyCompile: ~Module.load module.js:346
+      9    0.4%      0    0.0%                                                                                                  LazyCompile: ~Module._extensions..js module.js:472
+      9    0.4%      0    0.0%                                                                                                    LazyCompile: ~Module._compile module.js:374
+      3    0.1%      3    0.1%                                                                                                      /usr/local/bin/node
+      7    0.3%      0    0.0%                                                                                                LazyCompile: ~Module._resolveFilename module.js:323
+      4    0.2%      0    0.0%                                                                                                  LazyCompile: ~Module._findPath module.js:160
+      9    0.4%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/node/functionCall.js:1
+      6    0.2%      0    0.0%                                                                                          LazyCompile: ~ValueExpressionMixin /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/node/valueExpression.js:15
+      5    0.2%      0    0.0%                                                                                            LazyCompile: ~require module.js:379
+      5    0.2%      0    0.0%                                                                                              LazyCompile: *Module.require module.js:361
+      5    0.2%      0    0.0%                                                                                                LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                                                                  LazyCompile: ~Module.load module.js:346
+      3    0.1%      0    0.0%                                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+      3    0.1%      1    0.0%                                                                                                      LazyCompile: ~Module._compile module.js:374
+      3    0.1%      0    0.0%                                                                                          LazyCompile: ~require module.js:379
+      3    0.1%      0    0.0%                                                                                            LazyCompile: *Module.require module.js:361
+      3    0.1%      0    0.0%                                                                                              LazyCompile: Module._load module.js:275
+      5    0.2%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/sql/node_modules/lodash/dist/lodash.js:10
+      5    0.2%      5    0.2%                                                                                        /usr/local/bin/node
+      3    0.1%      0    0.0%                                                                            LazyCompile: ~Sql /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/index.js:15
+      3    0.1%      0    0.0%                                                                              LazyCompile: ~Sql.setDialect /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/index.js:56
+      3    0.1%      0    0.0%                                                                                LazyCompile: ~getDialect /home/mickhansen/dev/sequelize/upstream/node_modules/sql/lib/dialect/index.js:4
+      3    0.1%      0    0.0%                                                                                  LazyCompile: ~require module.js:379
+      3    0.1%      0    0.0%                                                                                    LazyCompile: *Module.require module.js:361
+      3    0.1%      0    0.0%                                                                                      LazyCompile: Module._load module.js:275
+     14    0.6%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao.js:1
+     13    0.5%      0    0.0%                                                                            LazyCompile: *require module.js:379
+     13    0.5%      0    0.0%                                                                              LazyCompile: *Module.require module.js:361
+     13    0.5%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+     12    0.5%      0    0.0%                                                                                  LazyCompile: ~Module.load module.js:346
+     11    0.5%      0    0.0%                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+     11    0.5%      0    0.0%                                                                                      LazyCompile: ~Module._compile module.js:374
+      6    0.2%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/associations/mixin.js:1
+      6    0.2%      0    0.0%                                                                                          LazyCompile: *require module.js:379
+      6    0.2%      0    0.0%                                                                                            LazyCompile: *Module.require module.js:361
+      6    0.2%      0    0.0%                                                                                              LazyCompile: Module._load module.js:275
+      5    0.2%      0    0.0%                                                                                                LazyCompile: ~Module.load module.js:346
+      5    0.2%      0    0.0%                                                                                                  LazyCompile: ~Module._extensions..js module.js:472
+      5    0.2%      0    0.0%                                                                                                    LazyCompile: ~Module._compile module.js:374
+      5    0.2%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dao-validator.js:1
+      5    0.2%      0    0.0%                                                                                          LazyCompile: *require module.js:379
+      5    0.2%      0    0.0%                                                                                            LazyCompile: *Module.require module.js:361
+      5    0.2%      0    0.0%                                                                                              LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                                                                LazyCompile: ~Module.load module.js:346
+      3    0.1%      0    0.0%                                                                                                  LazyCompile: ~Module._extensions..js module.js:472
+      3    0.1%      0    0.0%                                                                                                    LazyCompile: ~Module._compile module.js:374
+      3    0.1%      3    0.1%                                                            /usr/local/bin/node
+      4    0.2%      0    0.0%                                                      LazyCompile: ~Module._resolveFilename module.js:323
+      3    0.1%      0    0.0%                                                        LazyCompile: ~Module._findPath module.js:160
+      3    0.1%      0    0.0%                      LazyCompile: *Module.require module.js:361
+      3    0.1%      0    0.0%                        LazyCompile: Module._load module.js:275
+     34    1.4%      0    0.0%                    LazyCompile: ~module.exports.Sequelize.define /home/mickhansen/dev/sequelize/upstream/lib/sequelize.js:207
+     29    1.2%      0    0.0%                      LazyCompile: ~module.exports.DAOFactory.init /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:115
+     14    0.6%      0    0.0%                        LazyCompile: ~module.exports.findAutoIncrementField /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1378
+     14    0.6%      0    0.0%                          LazyCompile: ~module.exports.QueryGenerator.findAutoIncrementField /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:496
+     14    0.6%      0    0.0%                            LazyCompile: ~module.exports.Object.defineProperty.get /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:64
+     14    0.6%      0    0.0%                              LazyCompile: ~module.exports.QueryGenerator.attributesToSQL /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:406
+      7    0.3%      0    0.0%                                LazyCompile: template /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:6220
+      4    0.2%      0    0.0%                                  LazyCompile: NewFunction native v8natives.js:1640
+      3    0.1%      0    0.0%                                LazyCompile: <anonymous>
+      3    0.1%      3    0.1%                                /usr/local/bin/node
+     12    0.5%      0    0.0%                        LazyCompile: ~module.exports.addDefaultAttributes /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1317
+     11    0.5%      0    0.0%                          LazyCompile: ~module.exports.Object.defineProperty.get /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:64
+      5    0.2%      0    0.0%                            LazyCompile: ~module.exports.QueryGenerator.attributesToSQL /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:406
+      3    0.1%      0    0.0%                              LazyCompile: template /home/mickhansen/dev/sequelize/upstream/node_modules/lodash/dist/lodash.js:6220
+      5    0.2%      0    0.0%                            LazyCompile: ~module.exports.Object.defineProperty.get /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:78
+      5    0.2%      0    0.0%                              LazyCompile: ~module.exports.Object.defineProperty.get /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:74
+      5    0.2%      0    0.0%                                LazyCompile: ~module.exports.Sequelize.getQueryInterface /home/mickhansen/dev/sequelize/upstream/lib/sequelize.js:182
+      5    0.2%      0    0.0%                                  LazyCompile: ~module.exports.QueryInterface /home/mickhansen/dev/sequelize/upstream/lib/query-interface.js:8
+      5    0.2%      0    0.0%                                    LazyCompile: ~require module.js:379
+      5    0.2%      0    0.0%                                      LazyCompile: *Module.require module.js:361
+      5    0.2%      0    0.0%                                        LazyCompile: Module._load module.js:275
+      5    0.2%      0    0.0%                                          LazyCompile: *Module.load module.js:346
+      5    0.2%      0    0.0%                                            LazyCompile: ~Module._extensions..js module.js:472
+      5    0.2%      0    0.0%                                              LazyCompile: ~Module._compile module.js:374
+      4    0.2%      0    0.0%                                                Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:1
+      3    0.1%      0    0.0%                                                  Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:8
+      3    0.1%      0    0.0%                                                    LazyCompile: ~require module.js:379
+      3    0.1%      0    0.0%                                                      LazyCompile: *Module.require module.js:361
+      3    0.1%      0    0.0%                                                        LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                          LazyCompile: *Module.load module.js:346
+      3    0.1%      0    0.0%                                                            LazyCompile: ~Module._extensions..js module.js:472
+      3    0.1%      0    0.0%                                                              LazyCompile: ~Module._compile module.js:374
+      3    0.1%      0    0.0%                      LazyCompile: ~module.exports.DAOFactory /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:11
+     19    0.8%      0    0.0%                    LazyCompile: ~Mixin.hasMany /home/mickhansen/dev/sequelize/upstream/lib/associations/mixin.js:43
+     13    0.5%      0    0.0%                      LazyCompile: ~module.exports.HasMany.injectAttributes /home/mickhansen/dev/sequelize/upstream/lib/associations/has-many.js:136
+      8    0.3%      0    0.0%                        LazyCompile: ~module.exports.DAOFactory.init /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:115
+      4    0.2%      0    0.0%                          LazyCompile: ~module.exports.findAutoIncrementField /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1378
+      4    0.2%      0    0.0%                            LazyCompile: ~module.exports.QueryGenerator.findAutoIncrementField /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:496
+      4    0.2%      0    0.0%                              LazyCompile: ~module.exports.Object.defineProperty.get /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:64
+      4    0.2%      0    0.0%                                LazyCompile: ~module.exports.QueryGenerator.attributesToSQL /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query-generator.js:406
+      3    0.1%      0    0.0%                        LazyCompile: ~module.exports.DAOFactory.refreshAttributes /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:234
+      6    0.2%      0    0.0%                      LazyCompile: ~module.exports.HasMany /home/mickhansen/dev/sequelize/upstream/lib/associations/has-many.js:11
+      3    0.1%      0    0.0%                        LazyCompile: ~module.exports.Sequelize.define /home/mickhansen/dev/sequelize/upstream/lib/sequelize.js:207
+      3    0.1%      0    0.0%                          LazyCompile: ~module.exports.DAOFactory.init /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:115
+     16    0.7%      0    0.0%                    LazyCompile: module.exports.Sequelize /home/mickhansen/dev/sequelize/upstream/lib/sequelize.js:54
+      8    0.3%      0    0.0%                      LazyCompile: module.exports /home/mickhansen/dev/sequelize/upstream/lib/transaction-manager.js:3
+      8    0.3%      0    0.0%                        LazyCompile: ~require module.js:379
+      8    0.3%      0    0.0%                          LazyCompile: *Module.require module.js:361
+      8    0.3%      0    0.0%                            LazyCompile: Module._load module.js:275
+      8    0.3%      0    0.0%                              LazyCompile: *Module.load module.js:346
+      8    0.3%      0    0.0%                                LazyCompile: ~Module._extensions..js module.js:472
+      8    0.3%      0    0.0%                                  LazyCompile: ~Module._compile module.js:374
+      7    0.3%      0    0.0%                                    Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/connector-manager.js:1
+      6    0.2%      0    0.0%                                      LazyCompile: ~require module.js:379
+      6    0.2%      0    0.0%                                        LazyCompile: *Module.require module.js:361
+      6    0.2%      0    0.0%                                          LazyCompile: Module._load module.js:275
+      6    0.2%      0    0.0%                                            LazyCompile: *Module.load module.js:346
+      6    0.2%      0    0.0%                                              LazyCompile: ~Module._extensions..js module.js:472
+      6    0.2%      0    0.0%                                                LazyCompile: ~Module._compile module.js:374
+      6    0.2%      0    0.0%                                                  Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/query.js:1
+      6    0.2%      0    0.0%                                                    LazyCompile: ~require module.js:379
+      6    0.2%      0    0.0%                                                      LazyCompile: *Module.require module.js:361
+      6    0.2%      0    0.0%                                                        LazyCompile: Module._load module.js:275
+      4    0.2%      0    0.0%                                                          LazyCompile: *Module.load module.js:346
+      4    0.2%      0    0.0%                                                            LazyCompile: ~Module._extensions..js module.js:472
+      4    0.2%      0    0.0%                                                              LazyCompile: ~Module._compile module.js:374
+      4    0.2%      0    0.0%                                                                Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/abstract/query.js:1
+      4    0.2%      0    0.0%                                                                  LazyCompile: ~require module.js:379
+      4    0.2%      0    0.0%                                                                    LazyCompile: *Module.require module.js:361
+      4    0.2%      0    0.0%                                                                      LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                                        LazyCompile: *Module._resolveFilename module.js:323
+      3    0.1%      0    0.0%                                                                          LazyCompile: ~Module._findPath module.js:160
+      6    0.2%      0    0.0%                      LazyCompile: ~<anonymous> node.js:204
+      6    0.2%      0    0.0%                        LazyCompile: ~NativeModule.require node.js:842
+      6    0.2%      0    0.0%                          LazyCompile: ~NativeModule.compile node.js:887
+      6    0.2%      0    0.0%                            Function: ~<anonymous> console.js:1
+      4    0.2%      0    0.0%                              LazyCompile: ~<anonymous> node.js:611
+      3    0.1%      0    0.0%                                LazyCompile: ~createWritableStdioStream node.js:546
+      9    0.4%      0    0.0%                    LazyCompile: ~module.exports.DAOFactory.findAll /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:444
+      6    0.2%      0    0.0%                      LazyCompile: ~module.exports.validateIncludedElements /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1392
+      5    0.2%      0    0.0%                        LazyCompile: ~module.exports.validateIncludedElement /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1454
+      4    0.2%      0    0.0%                          LazyCompile: ~module.exports.validateIncludedElements /home/mickhansen/dev/sequelize/upstream/lib/dao-factory.js:1392
+      3    0.1%      0    0.0%                      LazyCompile: ~module.exports.QueryInterface.select /home/mickhansen/dev/sequelize/upstream/lib/query-interface.js:601
+     10    0.4%      0    0.0%          LazyCompile: ~Module._resolveFilename module.js:323
+      9    0.4%      0    0.0%            LazyCompile: ~Module._findPath module.js:160
+      9    0.4%      0    0.0%              LazyCompile: ~tryFile module.js:138
+      7    0.3%      0    0.0%                LazyCompile: ~NativeModule.require node.js:842
+      7    0.3%      0    0.0%                  LazyCompile: ~NativeModule.compile node.js:887
+      4    0.2%      0    0.0%                    Function: ~<anonymous> fs.js:1
+      3    0.1%      0    0.0%                      LazyCompile: ~NativeModule.require node.js:842
+      3    0.1%      0    0.0%                        LazyCompile: ~NativeModule.compile node.js:887
+      3    0.1%      3    0.1%                    /usr/local/bin/node
+      4    0.2%      0    0.0%      LazyCompile: ~startup.globalVariables node.js:160
+      4    0.2%      0    0.0%        LazyCompile: ~NativeModule.require node.js:842
+      4    0.2%      0    0.0%          LazyCompile: ~NativeModule.compile node.js:887
+      4    0.2%      0    0.0%            Function: ~<anonymous> buffer.js:1
+      4    0.2%      0    0.0%              LazyCompile: ~NativeModule.require node.js:842
+      4    0.2%      0    0.0%                LazyCompile: ~NativeModule.compile node.js:887
+      3    0.1%      0    0.0%                  Function: ~<anonymous> assert.js:1
+
+    149    6.2%    149    6.2%  /usr/local/bin/node
+
+    134    5.6%    134    5.6%  /lib/x86_64-linux-gnu/libc-2.17.so
+
+     28    1.2%      0    0.0%  LazyCompile: ~processImmediate timers.js:320
+     28    1.2%      0    0.0%    LazyCompile: ~b native v8natives.js:1582
+     28    1.2%      0    0.0%      LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/emitters/custom-event-emitter.js:22
+     18    0.7%      0    0.0%        LazyCompile: ~b native v8natives.js:1582
+     18    0.7%      0    0.0%          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/query-interface.js:857
+     18    0.7%      0    0.0%            LazyCompile: ~module.exports.Sequelize.query /home/mickhansen/dev/sequelize/upstream/lib/sequelize.js:319
+     18    0.7%      0    0.0%              LazyCompile: ~TransactionManager.query /home/mickhansen/dev/sequelize/upstream/lib/transaction-manager.js:44
+     17    0.7%      0    0.0%                LazyCompile: ~TransactionManager.getConnectorManager /home/mickhansen/dev/sequelize/upstream/lib/transaction-manager.js:14
+     17    0.7%      0    0.0%                  LazyCompile: ~module.exports.ConnectorManager /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/connector-manager.js:5
+     17    0.7%      0    0.0%                    LazyCompile: ~require module.js:379
+     17    0.7%      0    0.0%                      LazyCompile: *Module.require module.js:361
+     17    0.7%      0    0.0%                        LazyCompile: Module._load module.js:275
+     15    0.6%      0    0.0%                          LazyCompile: *Module.load module.js:346
+     15    0.6%      0    0.0%                            LazyCompile: ~Module._extensions..js module.js:472
+     15    0.6%      0    0.0%                              LazyCompile: ~Module._compile module.js:374
+     15    0.6%      0    0.0%                                Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/index.js:1
+     14    0.6%      0    0.0%                                  LazyCompile: ~require module.js:379
+     14    0.6%      0    0.0%                                    LazyCompile: *Module.require module.js:361
+     14    0.6%      0    0.0%                                      LazyCompile: Module._load module.js:275
+     14    0.6%      0    0.0%                                        LazyCompile: *Module.load module.js:346
+     14    0.6%      0    0.0%                                          LazyCompile: ~Module._extensions..js module.js:472
+     14    0.6%      1    0.0%                                            LazyCompile: ~Module._compile module.js:374
+     11    0.5%      0    0.0%                                              Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:1
+     11    0.5%      0    0.0%                                                LazyCompile: ~require module.js:379
+     11    0.5%      0    0.0%                                                  LazyCompile: *Module.require module.js:361
+     11    0.5%      0    0.0%                                                    LazyCompile: Module._load module.js:275
+      9    0.4%      0    0.0%                                                      LazyCompile: *Module.load module.js:346
+      9    0.4%      0    0.0%                                                        LazyCompile: ~Module._extensions..js module.js:472
+      8    0.3%      0    0.0%                                                          LazyCompile: ~Module._compile module.js:374
+      4    0.2%      0    0.0%                                                            Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/query.js:1
+      4    0.2%      0    0.0%                                                              LazyCompile: ~require module.js:379
+      4    0.2%      0    0.0%                                                                LazyCompile: *Module.require module.js:361
+      4    0.2%      0    0.0%                                                                  LazyCompile: Module._load module.js:275
+      4    0.2%      0    0.0%                                                                    LazyCompile: *Module.load module.js:346
+      4    0.2%      0    0.0%                                                                      LazyCompile: ~Module._extensions..js module.js:472
+      4    0.2%      0    0.0%                                                                        LazyCompile: ~Module._compile module.js:374
+      4    0.2%      0    0.0%                                                                          Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/result.js:1
+      4    0.2%      0    0.0%                                                                            LazyCompile: ~require module.js:379
+      4    0.2%      0    0.0%                                                                              LazyCompile: *Module.require module.js:361
+      4    0.2%      0    0.0%                                                                                LazyCompile: Module._load module.js:275
+      3    0.1%      0    0.0%                                                                                  LazyCompile: *Module.load module.js:346
+      3    0.1%      0    0.0%                                                                                    LazyCompile: ~Module._extensions..js module.js:472
+      3    0.1%      0    0.0%                                                                                      LazyCompile: ~Module._compile module.js:374
+      3    0.1%      0    0.0%                                                                                        Function: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/types/index.js:1
+      9    0.4%      0    0.0%        LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/connector-manager.js:50
+      9    0.4%      0    0.0%          LazyCompile: ~module.exports.ConnectorManager.connect /home/mickhansen/dev/sequelize/upstream/lib/dialects/postgres/connector-manager.js:71
+      3    0.1%      0    0.0%            LazyCompile: ~ConnectionParameters /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection-parameters.js:51
+      3    0.1%      0    0.0%              LazyCompile: ~parse /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection-parameters.js:14
+      3    0.1%      0    0.0%                LazyCompile: ~urlParse url.js:97
+      3    0.1%      0    0.0%            LazyCompile: ~Client.connect /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:38
+      3    0.1%      0    0.0%              LazyCompile: ~Connection.connect /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:36
+
+      8    0.3%      8    0.3%  /lib/x86_64-linux-gnu/libpthread-2.17.so
+
+      4    0.2%      0    0.0%  LazyCompile: ~afterConnect net.js:863
+      4    0.2%      0    0.0%    LazyCompile: ~EventEmitter.emit events.js:53
+      3    0.1%      0    0.0%      LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/connection.js:46
+      3    0.1%      0    0.0%        LazyCompile: ~EventEmitter.emit events.js:53
+      3    0.1%      0    0.0%          LazyCompile: ~<anonymous> /home/mickhansen/dev/sequelize/upstream/node_modules/pg/lib/client.js:49
+

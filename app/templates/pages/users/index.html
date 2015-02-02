@@ -1,0 +1,5 @@
+<div class="users-wrapper">
+  <a class="card-users" ng-repeat="user in users | filter:search" ng-href="#/users/{{user.id}}">
+    <nw-card card-title="user.name" image='gravatarUrl(user)' body="user.bio" id="user.id" type="{{user.username}}"></nw-card>
+  </a>
+</div>

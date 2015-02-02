@@ -1,0 +1,60 @@
+// *************************************
+//
+//   List
+//   -> Enumeration of items
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// %ul.list[.list--bordered|inline|object|styled|styled--numbered]
+//   %li.list-item List Item
+//   %li.list-item List Item
+//
+// *************************************
+
+// -------------------------------------
+//   Variables
+// -------------------------------------
+
+// ----- Borders ----- //
+
+$list-border: 1px solid $dark !default
+
+// ----- Sizing ----- //
+
+$list-space: 0.75em !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+.list, %list
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Item ----- //
+
+.list-item
+  border-bottom: $list-border
+  color: lighten($dark, 25%)
+  cursor: pointer
+  display: block
+  padding: $list-space
+  &:last-child
+    margin-bottom: 0
+    border-bottom: none
+  &:hover,
+  &:focus,
+  &:active,
+    background: lighten($dark, 10%)
+    color: $c-highlight
+  &.active
+    background: lighten($dark, 10%)
+    color: $c-highlight
+

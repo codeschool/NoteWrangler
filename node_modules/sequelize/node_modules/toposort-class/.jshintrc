@@ -1,0 +1,24 @@
+{
+    "node": true,
+    "browser": true,
+
+    "maxlen": 100,
+    "maxdepth": 5,
+
+    "smarttabs": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "validthis": true,
+    "forin": false,
+    "strict": true,
+    "noempty": true,
+    "curly": true,
+    "expr": true,
+    "noarg": true,
+    "passfail": false,
+    "unused": true,
+    "boss": true,
+    "quotmark": "double",
+
+    "predef": [ "suite", "define", "test" ]
+}

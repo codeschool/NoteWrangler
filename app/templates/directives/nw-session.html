@@ -1,0 +1,18 @@
+<div class='session'>
+  <div class="dropdown" ng-if='session.id'>
+    <a class="dropdown-btn">{{session.username}} <i class="icon user"></i></a>
+    <ul class="dropdown-menu list">
+      <li class="dropdown-item">
+        <a href="#/profile/edit" class="dropdown-item-link list-item-link"><i class="edit icon"></i> Edit Profile</a>
+      </li>
+      <li class="dropdown-item">
+        <a href="/sign_out" class="dropdown-item-link list-item-link"><i class="settings icon"></i> Sign Out</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="session-create" ng-if='!session.id'>
+    <a href='/sign_in'>Sign In</a> |
+    <a href='/sign_up'>Register</a>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+// node-inspector --config ./inspector-config.json & node --debug app.js
+
+{
+  "webPort": 8080,
+  "webHost": null,
+  "debugPort": 5858,
+  "saveLiveEdit": true,
+  "hidden": []
+}
