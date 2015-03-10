@@ -25,7 +25,7 @@ var iterator = new Iterator([1, 2, 3]);
 
 iterator.next(); // { value: 1, done: false }
 iterator.next(); // { value: 2, done: false }
-iterator.next(); // { value: 3, done: true }
+iterator.next(); // { value: 3, done: false }
 iterator.next(); // { value: undefined, done: true }
 ```
 
@@ -44,7 +44,7 @@ var iterator = new ArrayIterator([1, 2, 3], 'key+value');
 
 iterator.next(); // { value: [0, 1], done: false }
 iterator.next(); // { value: [1, 2], done: false }
-iterator.next(); // { value: [2, 3], done: true }
+iterator.next(); // { value: [2, 3], done: false }
 iterator.next(); // { value: undefined, done: true }
 ```
 
@@ -56,7 +56,7 @@ May also be used for _arguments_ objects:
 
   iterator.next(); // { value: 1, done: false }
   iterator.next(); // { value: 2, done: false }
-  iterator.next(); // { value: 3, done: true }
+  iterator.next(); // { value: 3, done: false }
   iterator.next(); // { value: undefined, done: true }
 }(1, 2, 3));
 ```
@@ -75,7 +75,7 @@ iterator.next(); // { value: '🙈', done: false }
 iterator.next(); // { value: 'o', done: false }
 iterator.next(); // { value: '🙉', done: false }
 iterator.next(); // { value: 'o', done: false }
-iterator.next(); // { value: '🙊', done: true }
+iterator.next(); // { value: '🙊', done: false }
 iterator.next(); // { value: undefined, done: true }
 ```
 
@@ -115,7 +115,7 @@ var iterator = get([1,2,3]);
 
 iterator.next(); // { value: 1, done: false }
 iterator.next(); // { value: 2, done: false }
-iterator.next(); // { value: 3, done: true }
+iterator.next(); // { value: 3, done: false }
 iterator.next(); // { value: undefined, done: true }
 ```
 

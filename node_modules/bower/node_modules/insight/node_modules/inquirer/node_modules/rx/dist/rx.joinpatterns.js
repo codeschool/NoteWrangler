@@ -34,28 +34,20 @@
 
   // Aliases
   var Observable = Rx.Observable,
-      observableProto = Observable.prototype,
-      AnonymousObservable = Rx.AnonymousObservable,
-      observableThrow = Observable.throwException,
-      observerCreate = Rx.Observer.create,
-      SingleAssignmentDisposable = Rx.SingleAssignmentDisposable,
-      CompositeDisposable = Rx.CompositeDisposable,
-      AbstractObserver = Rx.internals.AbstractObserver,
-      noop = Rx.helpers.noop,
-      defaultComparer = Rx.internals.isEqual,
-      inherits = Rx.internals.inherits,
-      Enumerable = Rx.internals.Enumerable,
-      Enumerator = Rx.internals.Enumerator,
-      $iterator$ = Rx.iterator,
-      doneEnumerator = Rx.doneEnumerator,
-      slice = Array.prototype.slice;
-
-  // Utilities
-  function argsOrArray(args, idx) {
-    return args.length === 1 && Array.isArray(args[idx]) ?
-      args[idx] :
-      slice.call(args);
-  }
+    observableProto = Observable.prototype,
+    AnonymousObservable = Rx.AnonymousObservable,
+    observableThrow = Observable.throwError,
+    observerCreate = Rx.Observer.create,
+    SingleAssignmentDisposable = Rx.SingleAssignmentDisposable,
+    CompositeDisposable = Rx.CompositeDisposable,
+    AbstractObserver = Rx.internals.AbstractObserver,
+    noop = Rx.helpers.noop,
+    defaultComparer = Rx.internals.isEqual,
+    inherits = Rx.internals.inherits,
+    Enumerable = Rx.internals.Enumerable,
+    Enumerator = Rx.internals.Enumerator,
+    $iterator$ = Rx.iterator,
+    doneEnumerator = Rx.doneEnumerator;
 
   /** @private */
   var Map = root.Map || (function () {
@@ -197,7 +189,6 @@
   };
 
   var JoinObserver = (function (__super__) {
-
     inherits(JoinObserver, __super__);
 
     function JoinObserver(source, onError) {
@@ -215,8 +206,7 @@
     JoinObserverPrototype.next = function (notification) {
       if (!this.isDisposed) {
         if (notification.kind === 'E') {
-          this.onError(notification.exception);
-          return;
+          return this.onError(notification.exception);
         }
         this.queue.push(notification);
         var activePlans = this.activePlans.slice(0);
@@ -266,7 +256,7 @@
   /**
    *  Matches when the observable sequence has an available value and projects the value.
    *
-   *  @param selector Selector that will be invoked for values in the source sequence.
+   *  @param {Function} selector Selector that will be invoked for values in the source sequence.
    *  @returns {Plan} Plan that produces the projected values, to be fed (with other plans) to the when operator.
    */
   observableProto.thenDo = function (selector) {
@@ -280,28 +270,34 @@
    *  @returns {Observable} Observable sequence with the results form matching several patterns.
    */
   Observable.when = function () {
-    var plans = argsOrArray(arguments, 0);
-    return new AnonymousObservable(function (observer) {
+    var len = arguments.length, plans;
+    if (Array.isArray(arguments[0])) {
+      plans = arguments[0];
+    } else {
+      plans = new Array(len);
+      for(var i = 0; i < len; i++) { plans[i] = arguments[i]; }
+    }
+    return new AnonymousObservable(function (o) {
       var activePlans = [],
           externalSubscriptions = new Map();
       var outObserver = observerCreate(
-        observer.onNext.bind(observer),
+        function (x) { o.onNext(x); },
         function (err) {
           externalSubscriptions.forEach(function (v) { v.onError(err); });
-          observer.onError(err);
+          o.onError(err);
         },
-        observer.onCompleted.bind(observer)
+        function (x) { o.onCompleted(); }
       );
       try {
         for (var i = 0, len = plans.length; i < len; i++) {
           activePlans.push(plans[i].activate(externalSubscriptions, outObserver, function (activePlan) {
             var idx = activePlans.indexOf(activePlan);
             activePlans.splice(idx, 1);
-            activePlans.length === 0 && observer.onCompleted();
+            activePlans.length === 0 && o.onCompleted();
           }));
         }
       } catch (e) {
-        observableThrow(e).subscribe(observer);
+        observableThrow(e).subscribe(o);
       }
       var group = new CompositeDisposable();
       externalSubscriptions.forEach(function (joinObserver) {

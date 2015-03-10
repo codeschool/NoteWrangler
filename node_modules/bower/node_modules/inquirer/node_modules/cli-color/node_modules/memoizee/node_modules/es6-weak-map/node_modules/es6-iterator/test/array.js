@@ -4,7 +4,7 @@ var iteratorSymbol = require('es6-symbol').iterator;
 
 module.exports = function (T) {
 	return {
-		"Values": function (a) {
+		Values: function (a) {
 			var x = ['raz', 'dwa', 'trzy', 'cztery', 'pięć', 'sześć'], it;
 
 			it = new T(x);
@@ -34,7 +34,7 @@ module.exports = function (T) {
 			a.deep(it.next(), { done: false, value: [5, 'pięć'] }, "#5");
 			a.deep(it.next(), { done: true, value: undefined }, "End");
 		},
-		"Keys": function (a) {
+		Keys: function (a) {
 			var x = ['raz', 'dwa', 'trzy', 'cztery', 'pięć', 'sześć'], it;
 
 			it = new T(x, 'key');
@@ -49,7 +49,7 @@ module.exports = function (T) {
 			a.deep(it.next(), { done: false, value: 5 }, "#5");
 			a.deep(it.next(), { done: true, value: undefined }, "End");
 		},
-		"Sparse": function (a) {
+		Sparse: function (a) {
 			var x = new Array(6), it;
 
 			x[2] = 'raz';

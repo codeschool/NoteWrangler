@@ -12,10 +12,10 @@ exports.quote = function (xs) {
             return "'" + s.replace(/(['\\])/g, '\\$1') + "'";
         }
         else if (/["'\s]/.test(s)) {
-            return '"' + s.replace(/(["\\$`(){}!#&*|])/g, '\\$1') + '"';
+            return '"' + s.replace(/(["\\$`!])/g, '\\$1') + '"';
         }
         else {
-            return String(s).replace(/([\\$`(){}!#&*|])/g, '\\$1');
+            return String(s).replace(/([\\$`()!#&*|])/g, '\\$1');
         }
     }).join(' ');
 };
