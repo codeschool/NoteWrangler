@@ -21,7 +21,7 @@ module.exports = function (T) {
 			a.deep(y = it.next(), { done: true, value: undefined }, "End");
 			a.not(y, it.next(), "Recreate result on dead");
 		},
-		"Emited": function (a) {
+		Emited: function (a) {
 			var x = ['raz', 'dwa', 'trzy', 'cztery', 'pięć'], y, it;
 
 			y = ee();

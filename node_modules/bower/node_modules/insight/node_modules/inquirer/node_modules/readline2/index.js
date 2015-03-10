@@ -4,10 +4,9 @@
  */
 
 "use strict";
-var _ = require("lodash");
 var readline = require("readline");
 var MuteStream = require("mute-stream");
-var chalk = require("chalk");
+var stripAnsi = require("strip-ansi");
 
 
 /**
@@ -39,20 +38,22 @@ Interface.createInterface = function( opt ) {
   var rl = readline.createInterface( filteredOpt );
 
   // Fix bug with refreshLine
-  rl._refreshLine = _.wrap(rl._refreshLine, function( func ) {
-    func.call(rl);
+  var _refreshLine = rl._refreshLine;
+  rl._refreshLine = function() {
+    _refreshLine.call(rl);
+
     var line = this._prompt + this.line;
     var cursorPos = this._getCursorPos();
 
     readline.moveCursor(this.output, -line.length, 0);
     readline.moveCursor(this.output, cursorPos.cols, 0);
-  });
+  };
 
   // Returns current cursor's position and line
   rl._getCursorPos = function() {
     var columns = this.columns;
     var strBeforeCursor = this._prompt + this.line.substring(0, this.cursor);
-    var dispPos = this._getDisplayPos(chalk.stripColor(strBeforeCursor));
+    var dispPos = this._getDisplayPos(strBeforeCursor);
     var cols = dispPos.cols;
     var rows = dispPos.rows;
     // If the cursor is on a full-width character which steps over the line,
@@ -71,7 +72,7 @@ Interface.createInterface = function( opt ) {
     var offset = 0;
     var col = this.columns;
     var code;
-    str = chalk.stripColor(str);
+    str = stripAnsi(str);
     for (var i = 0, len = str.length; i < len; i++) {
       code = codePointAt(str, i);
       if (code >= 0x10000) { // surrogates
