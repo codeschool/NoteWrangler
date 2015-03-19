@@ -9,6 +9,7 @@ angular.module('NoteWrangler')
   $scope.notes = Note.query();
 
   // With Firebase
+  // $scope.notes = Note();
 
 
   Session.sessionData().success(function(sessionUser) {
