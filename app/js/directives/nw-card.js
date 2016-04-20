@@ -13,7 +13,9 @@ angular.module('NoteWrangler')
     },
     templateUrl: "templates/directives/nw-card.html",
     link: function(scope, element) {
-      scope.body = $sce.trustAsHtml(markdown.toHTML(scope.body.toString()));
+      if(scope.body){
+        scope.body = $sce.trustAsHtml(markdown.toHTML(scope.body.toString()));
+      }
     }
   };
 }]);

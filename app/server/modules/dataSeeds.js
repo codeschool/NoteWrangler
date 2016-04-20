@@ -65,7 +65,8 @@ module.exports = {
 
     User.findOrCreate({
       "username": "renz",
-      "name": "Adam Rensel","bio": "Web Developer at @envylabs and @codeschool",
+      "name": "Adam Rensel",
+      "bio": "Web Developer at @envylabs and @codeschool",
       "twitter_handle": "@adamrensel",
       "site": "adamrensel.com"}).success(function(user){
 
