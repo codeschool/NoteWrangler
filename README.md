@@ -4,7 +4,7 @@ To get you started you can simply clone the note-wrangler repo and install the d
 
 ### Install Dependencies
 
-You will need node.js installed to run this sample app, I recommend [Node Version Manager][nvm]. 
+You will need node.js version 5.5 (version 6 isn't supported yet) installed to run this sample app, I recommend [Node Version Manager][nvm]. 
 Check out the repo for installation directions: [nvm github][nvm]
 
 * Install the server side node libraries we depend upon via `npm`, the [node package manager][npm].
