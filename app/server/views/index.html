@@ -26,10 +26,10 @@
             </div>
           </div>
 
-          <div class="nav-content-layout">
+          <!-- <div class="nav-content-layout">
             <nw-session></nw-session>
             <input class="form-input-search" type="text" placeholder="Search..." ng-model="search">
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="main-wrapper">
-        <div ng-view></div>
+      <div ng-view></div>
     </div>
 
     <!-- Vendors -->
@@ -54,6 +54,11 @@
     <script src="/js/vendor/angular-resource.js"></script>
     <script src="/js/vendor/gravatar.js"></script>
     <script src="/js/vendor/md5.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.2/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.0.0/angularfire.min.js"></script>
 
     <script src="/js/app.js"></script>
     <script src="/js/routes.js"></script>

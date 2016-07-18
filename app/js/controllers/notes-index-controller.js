@@ -1,11 +1,16 @@
-angular.module('NoteWrangler').controller('NotesIndexController', function($scope, Note, Session) {
+angular.module('NoteWrangler')
+.controller('NotesIndexController', function($scope, Note, Session) {
   // Without NgResource
   // Note.all().success(function(data) {
   //   $scope.notes = data;
   // });
-  
+
   // With NgResource
   $scope.notes = Note.query();
+
+  // With Firebase
+  // $scope.notes = Note();
+
 
   Session.sessionData().success(function(sessionUser) {
     // Create a new User from the session user data
